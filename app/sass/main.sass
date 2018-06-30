@@ -5,9 +5,9 @@
 	font-weight: 400
 	color: $menu-text
 	background: url(../img/Layer-1.jpg) no-repeat center top
- &-navbar
+ &-navbar //основное меню
  	padding: 40px
- &-logo
+ &-logo // логотип
 	 a
 	  font-family: 'Roboto', sans-serif
 	  color: $menu-text
@@ -15,19 +15,23 @@
 	  font-size: 24px
 	  text-decoration: none
 	  text-transform: uppercase
- &-menu
+ &-menu // меню
 	 list-style: none
 	 padding: 0
 	 margin: 0
 	 //display: block
-	 &__item
+	 &__item //элементы меню
 		 a
 		 	color: $menu-text
 			 text-decoration: none
 			 //display: block
-	&-image
-	 	
+			 &:hover
+			 	border: 1px solid $menu-text
+			 	border-radius: 20px
+			 	padding: 8px 20px
+			 	//width: 75px
 	&-title
+		padding: 230px 0 330px
 		text-align: center
 		h1
 			font-family: 'Source Sans Pro', sans-serif
