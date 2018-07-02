@@ -123,9 +123,13 @@
   content: '\f319'; }
 
 /* '' */
-.header {
+body {
+  color: #a3a6ac;
+  font-size: 16px;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-weight: 400; }
+
+.header {
   color: #fff;
   background: url(../img/Layer-1.jpg) no-repeat center top; }
   .header-navbar {
@@ -134,7 +138,7 @@
     font-family: 'Roboto', sans-serif;
     color: #fff;
     font-weight: 900;
-    font-size: 24px;
+    font-size: 25px;
     text-decoration: none;
     text-transform: uppercase; }
   .header-menu {
@@ -154,18 +158,40 @@
     text-align: center; }
     .header-title h1 {
       font-family: 'Source Sans Pro', sans-serif;
-      font-weight: 300; }
-    .header-title p {
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 400; }
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 35px; }
   .header-icon {
     text-align: center;
     padding-bottom: 75px; }
-    .header-icon a {
-      display: block;
+    .header-icon a i {
+      font-size: 25px;
+      background: #10b292;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
       color: #fff; }
-      .header-icon a i {
-        font-size: 25px;
-        background: #10b292;
-        -webkit-border-radius: 50%;
-                border-radius: 50%; }
+
+.about {
+  padding: 115px 0 0 165px;
+  font-family: 'Source Sans Pro', sans-serif; }
+  .about__title {
+    color: #4e555f;
+    font-size: 20px;
+    text-transform: uppercase; }
+  .about__text {
+    padding: 50px 0 35px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px; }
+  .about__button {
+    font-family: 'Open Sans', sans-serif; }
+    .about__button a {
+      display: inline-block;
+      padding: 8px 30px;
+      -webkit-border-radius: 20px;
+              border-radius: 20px;
+      border: 1px solid #4e555f;
+      background: transparent;
+      color: #4e555f;
+      text-decoration: none; }
+  .about__ipad {
+    padding: 100px 0 0 100px; }

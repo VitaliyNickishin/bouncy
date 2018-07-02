@@ -1,9 +1,12 @@
 @import "colors"//интегрируем переменные с цветами
 @import "fontello"//иконкa
 
-.header
-	font-family: 'Open Sans', sans-serif
+body
+ color: $body-text
+ font-size: 16px
+ font-family: 'Open Sans', sans-serif
 	font-weight: 400
+.header
 	color: $menu-text
 	background: url(../img/Layer-1.jpg) no-repeat center top
  &-navbar //основное меню
@@ -13,7 +16,7 @@
 	  font-family: 'Roboto', sans-serif
 	  color: $menu-text
 	  font-weight: 900
-	  font-size: 24px
+	  font-size: 25px
 	  text-decoration: none
 	  text-transform: uppercase
  &-menu // меню
@@ -38,16 +41,38 @@
 		h1
 			font-family: 'Source Sans Pro', sans-serif
 			font-weight: 300
-		p
-			font-family: 'Open Sans', sans-serif
-			font-weight: 400
+			text-transform: uppercase
+			font-size: 35px
  &-icon 
  	text-align: center
  	padding-bottom: 75px
 	 a
-	  display: block
-	  color: $menu-text
 	  i
  	  font-size: 25px
  	  background: $active-color
  	  border-radius: 50%
+ 	  color: $menu-text
+.about
+ padding: 115px 0 0 165px
+ font-family: 'Source Sans Pro', sans-serif
+ //width: 450px
+ &__title
+  color: $h-color
+  font-size: 20px
+  text-transform: uppercase
+ &__text
+  padding: 50px 0 35px
+  font-family: 'Open Sans', sans-serif
+  font-size: 14px
+ &__button
+  font-family: 'Open Sans', sans-serif
+	 a
+	  display: inline-block
+	  padding: 8px 30px
+   border-radius: 20px
+   border: 1px solid $h-color
+   background: transparent
+   color: $h-color
+   text-decoration: none
+ &__ipad
+  padding: 100px 0 0 100px
