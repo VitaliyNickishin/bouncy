@@ -1,4 +1,5 @@
 @import "colors"//интегрируем переменные с цветами
+@import "fontello"//иконкa
 
 .header
 	font-family: 'Open Sans', sans-serif
@@ -20,10 +21,11 @@
 	 padding: 0
 	 margin: 0
 	 //display: block
-	 &__item //элементы меню
+	 &__item //элементы
 		 a
 		 	color: $menu-text
 			 text-decoration: none
+			 //width: 300px
 			 //display: block
 			 &:hover
 			 	border: 1px solid $menu-text
@@ -39,3 +41,9 @@
 		p
 			font-family: 'Open Sans', sans-serif
 			font-weight: 400
+ &__icon
+	 a
+ 	 display: block
+ 	 width: 20px
+ 	 height: 20px
+ 	 text-align: center
