@@ -15,7 +15,10 @@ body
  
 .header //блок для 1 страницы
 	color: $menu-text
-	background: url(../img/Layer-1.jpg) no-repeat center top
+	background: url(../img/Layer-1.jpg) no-repeat 50% 100%
+ //background-color: darken($black, 80%) //светлее на 2%
+ //background: hsla(10, 10%, 10%, 0.2)
+ //opacity: 0.8
  &-navbar //основное меню
  	padding-top: 40px
  &-logo // логотип
@@ -38,19 +41,18 @@ body
 		 a
 		 	color: $menu-text
 			 text-decoration: none
-    
 	&-title //блок с контентом
 		padding: 210px 0 300px
-		//text-align: center
+		text-align: center
 		h1 //главный заголовок
 			font-family: 'Source Sans Pro', sans-serif
 			font-weight: 300
 			letter-spacing: 8px
 			text-transform: uppercase
 			font-size: 35px
-			padding-left: 420px
 		p //контент
-			padding: 30px 0 0 305px
+			padding: 30px 240px 0
+			//width: 600px
  &-icon //блок для стрелки 
  	text-align: center
  	padding-bottom: 75px
@@ -68,11 +70,11 @@ body
   color: $h-color
   font-size: 20px
   text-transform: uppercase
+  letter-spacing: 6px
  &__text //контент
   padding: 40px 0 35px
   font-family: 'Open Sans', sans-serif
   font-size: 14px
-  //width: 450px
  &__button //кнопка
   font-family: 'Open Sans', sans-serif
   padding-bottom: 100px
@@ -84,5 +86,62 @@ body
    background: transparent
    color: $h-color
    text-decoration: none
+   &:hover
+ 				background: $active-color
+ 				color: $menu-text
+ 				border: 1px solid $menu-text
+ 				
  &__ipad //изображение 
   padding: 100px 0 0 50px
+
+.details //блок для 3 страницы
+ background: $details-bg
+ text-align: center
+ padding-bottom: 100px
+ &__title //заголовок
+ 	@extend .about__title //наследуем 
+  padding: 75px 0 40px
+ &__text //контент
+  font-family: 'Open Sans', sans-serif
+  font-size: 14px
+  padding: 0 240px 44px
+ &__icons //иконки
+ 	list-style: none
+ 	li
+ 		padding-right: 25px
+ 		a
+ 			display: block
+ 			width: 50px
+ 			height: 50px
+ 			border-radius: 50%
+ 			text-align: center
+ 			background: $icons-bg
+ 			color: $menu-text
+ 			font-size: 20px
+ 			line-height: 50px
+ 			text-decoration: none
+ 			&:hover
+ 				background: $active-color
+ &__title-creative
+  font-family: 'Open Sans', sans-serif
+  font-size: 20px
+  text-align: left
+  color: $h-color
+  padding: 50px 80px 32px
+ &__text-creative
+  text-align: left
+  font-size: 16px
+  padding: 0 80px
+  span
+  	color: $active-color
+  	font-weight: 700
+  strong
+  	color: $h-color
+ &__text-creative-right
+ 	padding: 110px 80px 0 0
+ 	text-align: left
+  span
+  	color: $active-color
+  	font-weight: 700
+  strong
+  	color: $h-color
