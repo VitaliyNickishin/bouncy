@@ -1,17 +1,25 @@
 @import "colors"//интегрируем переменные с цветами
-@import "fontello"//иконкa
+@import "fontello"//иконки с fontello
+
+*
+ padding: 0
+ margin: 0
+ border: 0
+ outline: 0
 
 body
- color: $body-text
- font-size: 16px
  font-family: 'Open Sans', sans-serif
-	font-weight: 400
-.header
+ font-size: 16px
+ font-weight: 400
+ color: $body-text
+ 
+.header //блок для 1 страницы
 	color: $menu-text
 	background: url(../img/Layer-1.jpg) no-repeat center top
  &-navbar //основное меню
- 	padding: 40px
+ 	padding-top: 40px
  &-logo // логотип
+ 	padding-left: 25px
 	 a
 	  font-family: 'Roboto', sans-serif
 	  color: $menu-text
@@ -21,29 +29,29 @@ body
 	  text-transform: uppercase
  &-menu // меню
 	 list-style: none
-	 padding: 0
-	 margin: 0
-	 //display: block
-	 &__item //элементы
+	 &__item //элементы меню
+	 	padding: 8px 20px
+	 	border-radius: 20px
+	 	border: 1px solid transparent
+	 	&:hover //при наведении
+			 	border: 1px solid $menu-text //белая рамка
 		 a
 		 	color: $menu-text
 			 text-decoration: none
-			 //width: 300px
-			 //display: block
-			 &:hover
-			 	border: 1px solid $menu-text
-			 	border-radius: 20px
-			 	padding: 8px 20px
-			 	//width: 75px
-	&-title
-		padding: 230px 0 330px
-		text-align: center
-		h1
+    
+	&-title //блок с контентом
+		padding: 210px 0 300px
+		//text-align: center
+		h1 //главный заголовок
 			font-family: 'Source Sans Pro', sans-serif
 			font-weight: 300
+			letter-spacing: 8px
 			text-transform: uppercase
 			font-size: 35px
- &-icon 
+			padding-left: 420px
+		p //контент
+			padding: 30px 0 0 305px
+ &-icon //блок для стрелки 
  	text-align: center
  	padding-bottom: 75px
 	 a
@@ -52,20 +60,22 @@ body
  	  background: $active-color
  	  border-radius: 50%
  	  color: $menu-text
-.about
- padding: 115px 0 0 165px
- font-family: 'Source Sans Pro', sans-serif
- //width: 450px
- &__title
+
+.about //блок для 2 страницы
+ padding: 115px 100px 0 165px
+ &__title //заголовок
+ 	font-family: 'Source Sans Pro', sans-serif
   color: $h-color
   font-size: 20px
   text-transform: uppercase
- &__text
-  padding: 50px 0 35px
+ &__text //контент
+  padding: 40px 0 35px
   font-family: 'Open Sans', sans-serif
   font-size: 14px
- &__button
+  //width: 450px
+ &__button //кнопка
   font-family: 'Open Sans', sans-serif
+  padding-bottom: 100px
 	 a
 	  display: inline-block
 	  padding: 8px 30px
@@ -74,5 +84,5 @@ body
    background: transparent
    color: $h-color
    text-decoration: none
- &__ipad
-  padding: 100px 0 0 100px
+ &__ipad //изображение 
+  padding: 100px 0 0 50px

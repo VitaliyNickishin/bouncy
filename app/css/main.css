@@ -123,44 +123,55 @@
   content: '\f319'; }
 
 /* '' */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0; }
+
 body {
-  color: #a3a6ac;
-  font-size: 16px;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400; }
+  font-size: 16px;
+  font-weight: 400;
+  color: #a3a6ac; }
 
 .header {
   color: #fff;
   background: url(../img/Layer-1.jpg) no-repeat center top; }
   .header-navbar {
-    padding: 40px; }
-  .header-logo a {
-    font-family: 'Roboto', sans-serif;
-    color: #fff;
-    font-weight: 900;
-    font-size: 25px;
-    text-decoration: none;
-    text-transform: uppercase; }
-  .header-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0; }
-    .header-menu__item a {
+    padding-top: 40px; }
+  .header-logo {
+    padding-left: 25px; }
+    .header-logo a {
+      font-family: 'Roboto', sans-serif;
       color: #fff;
-      text-decoration: none; }
-      .header-menu__item a:hover {
-        border: 1px solid #fff;
-        -webkit-border-radius: 20px;
-                border-radius: 20px;
-        padding: 8px 20px; }
+      font-weight: 900;
+      font-size: 25px;
+      text-decoration: none;
+      text-transform: uppercase; }
+  .header-menu {
+    list-style: none; }
+    .header-menu__item {
+      padding: 8px 20px;
+      -webkit-border-radius: 20px;
+              border-radius: 20px;
+      border: 1px solid transparent; }
+      .header-menu__item:hover {
+        border: 1px solid #fff; }
+      .header-menu__item a {
+        color: #fff;
+        text-decoration: none; }
   .header-title {
-    padding: 230px 0 330px;
-    text-align: center; }
+    padding: 210px 0 300px; }
     .header-title h1 {
       font-family: 'Source Sans Pro', sans-serif;
       font-weight: 300;
+      letter-spacing: 8px;
       text-transform: uppercase;
-      font-size: 35px; }
+      font-size: 35px;
+      padding-left: 420px; }
+    .header-title p {
+      padding: 30px 0 0 305px; }
   .header-icon {
     text-align: center;
     padding-bottom: 75px; }
@@ -172,18 +183,19 @@ body {
       color: #fff; }
 
 .about {
-  padding: 115px 0 0 165px;
-  font-family: 'Source Sans Pro', sans-serif; }
+  padding: 115px 100px 0 165px; }
   .about__title {
+    font-family: 'Source Sans Pro', sans-serif;
     color: #4e555f;
     font-size: 20px;
     text-transform: uppercase; }
   .about__text {
-    padding: 50px 0 35px;
+    padding: 40px 0 35px;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px; }
   .about__button {
-    font-family: 'Open Sans', sans-serif; }
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 100px; }
     .about__button a {
       display: inline-block;
       padding: 8px 30px;
@@ -194,4 +206,4 @@ body {
       color: #4e555f;
       text-decoration: none; }
   .about__ipad {
-    padding: 100px 0 0 100px; }
+    padding: 100px 0 0 50px; }
