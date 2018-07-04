@@ -186,7 +186,7 @@ body {
 
 .about {
   padding: 110px 100px 0 165px; }
-  .about__title, .details__title h5 {
+  .about__title, .details__title h5, .projects__title h5 {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
     color: #4e555f;
@@ -215,16 +215,17 @@ body {
 .details {
   background: #f3f3f3;
   padding-bottom: 84px; }
-  .details__title {
-    padding-top: 75px;
+  .details__title, .projects__title {
+    padding: 75px 0 60px;
     text-align: center; }
-    .details__title h5 {
-      padding-bottom: 27px; }
-    .details__title p {
+    .details__title h5, .projects__title h5 {
+      margin: 0;
+      padding-bottom: 35px; }
+    .details__title p, .projects__title p {
+      margin: 0;
       display: inline-block;
       width: 455px; }
   .details__icons {
-    padding-top: 40px;
     list-style: none; }
     .details__icons li {
       padding-right: 25px; }
