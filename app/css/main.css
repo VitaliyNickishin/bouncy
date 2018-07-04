@@ -129,6 +129,9 @@
   border: 0;
   outline: 0; }
 
+ul {
+  list-style: none; }
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -149,18 +152,16 @@ body {
       font-size: 25px;
       text-decoration: none;
       text-transform: uppercase; }
-  .header-menu {
-    list-style: none; }
-    .header-menu__item {
-      padding: 8px 20px;
-      -webkit-border-radius: 20px;
-              border-radius: 20px;
-      border: 1px solid transparent; }
-      .header-menu__item:hover {
-        border: 1px solid #fff; }
-      .header-menu__item a {
-        color: #fff;
-        text-decoration: none; }
+  .header-menu__item {
+    padding: 8px 20px;
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
+    border: 1px solid transparent; }
+    .header-menu__item:hover {
+      border: 1px solid #fff; }
+    .header-menu__item a {
+      color: #fff;
+      text-decoration: none; }
   .header-title {
     padding: 210px 0 300px;
     text-align: center; }
@@ -185,32 +186,37 @@ body {
       color: #fff; }
 
 .about {
-  padding: 110px 100px 0 165px; }
-  .about__title, .details__title h5, .projects__title h5 {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
-    color: #4e555f;
-    letter-spacing: 4px;
-    text-transform: uppercase; }
-  .about__text {
-    padding: 40px 0 35px; }
-  .about__button {
-    padding-bottom: 100px; }
-    .about__button a {
-      display: inline-block;
-      padding: 8px 30px;
-      -webkit-border-radius: 20px;
-              border-radius: 20px;
-      border: 1px solid #4e555f;
-      background: transparent;
+  padding: 0 175px 55px 250px; }
+  .about__title {
+    padding: 105px 0 0 0;
+    width: 475px; }
+    .about__title-common, .details__title h5, .projects__title h5 {
+      margin: 0;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 20px;
       color: #4e555f;
+      letter-spacing: 4px;
+      text-transform: uppercase; }
+  .about p {
+    margin: 0;
+    padding: 40px 0 35px;
+    display: inline-block; }
+  .about__button {
+    display: inline-block;
+    padding: 6px 30px;
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
+    border: 1px solid #4e555f;
+    background: transparent;
+    color: #4e555f;
+    text-decoration: none; }
+    .about__button:hover {
+      background: #10b292;
+      color: #fff;
+      border: 1px solid #fff;
       text-decoration: none; }
-      .about__button a:hover {
-        background: #10b292;
-        color: #fff;
-        border: 1px solid #fff; }
   .about__ipad {
-    padding: 100px 0 0 50px; }
+    padding: 85px 0 0 155px; }
 
 .details {
   background: #f3f3f3;
@@ -225,24 +231,22 @@ body {
       margin: 0;
       display: inline-block;
       width: 455px; }
-  .details__icons {
-    list-style: none; }
-    .details__icons li {
-      padding-right: 25px; }
-      .details__icons li a {
-        display: block;
-        width: 50px;
-        height: 50px;
-        -webkit-border-radius: 50%;
-                border-radius: 50%;
-        text-align: center;
-        background: #81868e;
-        color: #fff;
-        font-size: 20px;
-        line-height: 50px;
-        text-decoration: none; }
-        .details__icons li a:hover {
-          background: #10b292; }
+  .details__icons li {
+    padding-right: 25px; }
+    .details__icons li a {
+      display: block;
+      width: 50px;
+      height: 50px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      text-align: center;
+      background: #81868e;
+      color: #fff;
+      font-size: 20px;
+      line-height: 50px;
+      text-decoration: none; }
+      .details__icons li a:hover {
+        background: #10b292; }
   .details__title-creative {
     padding: 50px 80px 32px;
     font-size: 20px;
@@ -259,3 +263,19 @@ body {
   .details__text-creative-right {
     padding: 110px 80px 0 0;
     text-align: left; }
+
+.projects__img-layer83 {
+  background: url(../img/Layer-83.jpg) no-repeat center;
+  width: 700px;
+  height: 320px; }
+
+.projects__img-layer17 {
+  background: url(../img/Layer-17.jpg) no-repeat center;
+  width: 335px;
+  height: 320px; }
+
+.projects__img-layer18 {
+  background: url(../img/Layer-18.jpg) no-repeat center;
+  width: 330px;
+  height: 320px;
+  margin-right: 0; }

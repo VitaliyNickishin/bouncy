@@ -6,7 +6,8 @@
  margin: 0
  border: 0
  outline: 0
-
+ul
+	list-style: none
 body
  font-family: 'Open Sans', sans-serif
  font-size: 16px
@@ -31,7 +32,6 @@ body
 	  text-decoration: none
 	  text-transform: uppercase
  &-menu // меню
-	 list-style: none
 	 &__item //элементы меню
 	 	padding: 8px 20px
 	 	border-radius: 20px
@@ -65,31 +65,36 @@ body
  	  color: $menu-text
 
 .about //блок для 2 страницы
- padding: 110px 100px 0 165px
- &__title //заголовок
- 	font-family: 'Source Sans Pro', sans-serif
-  font-size: 20px
-  color: $h-color
-  letter-spacing: 4px
-  text-transform: uppercase
- &__text //контент
+ padding: 0 175px 55px 250px
+ &__title
+ 	padding: 105px 0 0 0
+ 	width: 475px
+  &-common //заголовок
+	 	margin: 0
+	 	font-family: 'Source Sans Pro', sans-serif
+	  font-size: 20px
+	  color: $h-color
+	  letter-spacing: 4px
+	  text-transform: uppercase
+ p //контент
+  margin: 0
   padding: 40px 0 35px
+  display: inline-block
  &__button //кнопка
-  padding-bottom: 100px
-	 a
-	  display: inline-block
-	  padding: 8px 30px
-   border-radius: 20px
-   border: 1px solid $h-color
-   background: transparent
-   color: $h-color
-   text-decoration: none
-   &:hover
- 				background: $active-color
- 				color: $menu-text
- 				border: 1px solid $menu-text
+ 	display: inline-block
+  padding: 6px 30px
+  border-radius: 20px
+  border: 1px solid $h-color
+  background: transparent
+  color: $h-color
+  text-decoration: none
+  &:hover
+ 			background: $active-color
+ 			color: $menu-text
+ 			border: 1px solid $menu-text
+ 			text-decoration: none
  &__ipad //изображение 
-  padding: 100px 0 0 50px
+  padding: 85px 0 0 155px
 
 .details //блок для 3 страницы
  background: $details-bg
@@ -100,13 +105,12 @@ body
  	h5 //заголовок
  		margin: 0
  		padding-bottom: 35px
- 	 @extend .about__title //наследуем
+ 	 @extend .about__title-common //наследуем
   p //контент
    margin: 0
    display: inline-block
    width: 455px
  &__icons //иконки
- 	list-style: none
  	li
  		padding-right: 25px
  		a
@@ -122,12 +126,12 @@ body
  			text-decoration: none
  			&:hover
  				background: $active-color
- &__title-creative
+ &__title-creative //нижний заголовок
  	padding: 50px 80px 32px
   font-size: 20px
   text-align: left
   color: $h-color
- &__text-creative
+ &__text-creative //нижний текст
   padding: 0 80px
   text-align: left
  span
@@ -135,12 +139,27 @@ body
   font-weight: 700
  strong
   color: $h-color
- &__text-creative-right
+ &__text-creative-right //нижний текст справа
  	padding: 110px 80px 0 0
  	text-align: left
 
+
 .projects //блок для 4 страницы
-	&__title
+	&__title //заголовок
 		@extend .details__title //наследуем от заголовка c общими параметрами
  &__img
- 	
+
+ 	&-layer83
+ 	 //margin-left: -77px
+ 	 background: url(../img/Layer-83.jpg) no-repeat center
+ 	 width: 700px
+ 	 height: 320px
+ 	&-layer17
+ 	 background: url(../img/Layer-17.jpg) no-repeat center
+ 	 width: 335px
+ 	 height: 320px
+ 	&-layer18
+ 	 background: url(../img/Layer-18.jpg) no-repeat center
+ 	 width: 330px
+ 	 height: 320px
+ 	 margin-right: 0
