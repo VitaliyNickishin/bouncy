@@ -3,12 +3,14 @@
 
 ul
 	list-style: none
+	padding: 0
+	margin: 0
 body
  font-family: 'Open Sans', sans-serif
  font-size: 16px
  font-weight: 400
  color: $body-text
- 
+
 .header //блок для 1 страницы
 	background: url(../img/Layer-1.jpg) no-repeat 50% 100%
  opacity: 0.9
@@ -101,7 +103,7 @@ body
 
 .details //блок для 3 страницы
  background: $details-bg
- padding-bottom: 84px
+ //padding-bottom: 84px
  &__title //заголовок c общими параметрами
  	padding: 75px 0 60px
  	text-align: center
@@ -130,11 +132,13 @@ body
  			&:hover
  				background: $active-color
  &__title-creative //нижний заголовок
- 	padding: 50px 80px 32px
+ 	margin: 0
+ 	padding: 50px 80px 35px
   font-size: 20px
   text-align: left
   color: $h-color
  &__text-creative //нижний текст
+  margin: 0
   padding: 0 80px
   text-align: left
  span
@@ -143,9 +147,10 @@ body
  strong
   color: $h-color
  &__text-creative-right //нижний текст справа
- 	padding: 110px 80px 0 0
+ 	margin: 0
+ 	padding: 110px 80px 95px 0
  	text-align: left
-
+ 	font-size: 14px
 
 .projects //блок для 4 страницы
 	&__title //заголовок
@@ -166,3 +171,9 @@ body
  	 width: 330px
  	 height: 320px
  	 margin-right: 0
+ &__img-down
+  width: 100%
+ 	height: 115px
+ 	background: $active-color
+ 	p
+ 		a
