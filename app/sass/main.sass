@@ -10,34 +10,35 @@ body
  color: $body-text
  
 .header //блок для 1 страницы
-	color: $menu-text
 	background: url(../img/Layer-1.jpg) no-repeat 50% 100%
- //background-color: darken($black, 80%) //светлее на 2%
- //background: hsla(10, 10%, 10%, 0.2)
- //opacity: 0.8
- &-navbar //основное меню
- 	padding-top: 40px
+ opacity: 0.9
+ color: $menu-text
+ &_dark-bg //темный прозрачный фон
+ 	background: rgba(0, 0, 0, 0.3)
+ 	//background: hsla(10, 10%, 10%, 0.2)
  &-logo // логотип
- 	padding-left: 25px
+ 	padding: 40px 0 0 25px
+ 	font-family: 'Roboto', sans-serif
+	 font-weight: 900
+	 font-size: 25px
+	 text-transform: uppercase
 	 a
-	  font-family: 'Roboto', sans-serif
 	  color: $menu-text
-	  font-weight: 900
-	  font-size: 25px
 	  text-decoration: none
-	  text-transform: uppercase
  &-menu // меню
+ 	padding-top: 40px
 	 &__item //элементы меню
-	 	padding: 6px 20px
+	 	margin: 0
+	 	padding: 6px 19px
 	 	border-radius: 20px
 	 	border: 1px solid transparent
 	 	&:hover //при наведении
-			 	border: 1px solid $menu-text //белая рамка
+			 border: 1px solid $menu-text //белая рамка
 		 a
 		 	color: $menu-text
 			 text-decoration: none
 	&-title //блок с контентом
-		padding: 210px 0 300px
+		margin: 210px 0 220px
 		text-align: center
 		h1 //главный заголовок
 			margin: 0
@@ -48,19 +49,24 @@ body
 			text-transform: uppercase
 		p //контент
 			margin: 0
-			padding-top: 35px
+			padding-top: 30px
 			display: inline-block
 			width: 630px
- &-icon //блок для стрелки 
+			line-height: 1.8rem
+ &-arrow //блок для стрелки
  	text-align: center
- 	padding-bottom: 75px
+ 	margin-bottom: 75px
 	 a
-	  i
- 	  font-size: 25px
- 	  background: $active-color
+	 	i
+ 	 	display: inline-block
+ 	 	width: 35px
+ 	  height: 35px
  	  border-radius: 50%
+ 	  background: $active-color
  	  color: $menu-text
-
+ 	  text-align: center
+ 	  line-height: 35px
+   
 .about //блок для 2 страницы
  padding: 0 175px 55px 250px
  &__title
