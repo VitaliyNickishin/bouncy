@@ -85,21 +85,22 @@ body
   margin: 0
   padding: 40px 0 35px
   display: inline-block
- &__button //кнопка
- 	display: inline-block
-  padding: 6px 30px
-  border-radius: 20px
-  border: 1px solid $h-color
-  background: transparent
-  color: $h-color
-  text-decoration: none
-  &:hover
- 			background: $active-color
- 			color: $menu-text
- 			border: 1px solid $menu-text
- 			text-decoration: none
  &__ipad //изображение 
-  padding: 85px 0 0 155px
+  padding: 85px 0 0 155px 
+.submit //кнопка с общими свойствами
+ display: inline-block
+ padding: 6px 30px
+ border-radius: 20px
+ border: 1px solid $h-color
+ background: transparent
+ color: $h-color
+ text-decoration: none
+ &:hover
+ 	background: $active-color
+ 	color: $menu-text
+ 	border: 1px solid $menu-text
+ 	text-decoration: none
+ 
 
 .details //блок для 3 страницы
  background: $details-bg
@@ -155,25 +156,52 @@ body
 .projects //блок для 4 страницы
 	&__title //заголовок
 		@extend .details__title //наследуем от заголовка c общими параметрами
- &__img
-
- 	&-layer83
- 	 //margin-left: -77px
- 	 background: url(../img/Layer-83.jpg) no-repeat center
- 	 width: 700px
- 	 height: 320px
- 	&-layer17
- 	 background: url(../img/Layer-17.jpg) no-repeat center
- 	 width: 335px
- 	 height: 320px
- 	&-layer18
- 	 background: url(../img/Layer-18.jpg) no-repeat center
- 	 width: 330px
- 	 height: 320px
- 	 margin-right: 0
- &__img-down
+ &__img //три изображения
+ 	height: 320px
+	 &-layer83
+	 	background: url(../img/Layer-83.jpg) no-repeat center
+	 	//width: 700px
+	 	width: 50%
+	 &-layer17
+	 	background: url(../img/Layer-17.jpg) no-repeat center
+	 	//width: 335px
+	 	width: 25%
+	 &-layer18
+	 	background: url(../img/Layer-18.jpg) no-repeat center
+	 	//width: 330px
+	 	width: 25%
+ &-bg
+ 	background: url(../img/Layer-1.jpg) no-repeat center
+ &__panel //изображение нижнее под прозрач. фоном
+  height: 115px
   width: 100%
- 	height: 115px
- 	background: $active-color
- 	p
- 		a
+  background: $active-color
+  color: $menu-text
+  opacity: 0.8
+  &-text //блок для текста
+ 	 p
+ 	 	margin: 0
+ 	 	padding-left: 165px
+ 	 	line-height: 115px
+ 	 	width: 755px
+ 	&-button //блок для кнопки
+ 		padding-top: 35px
+ 		margin-left: 135px
+ 		a //переопределяем стили
+    border: 1px solid $menu-text
+    color: $menu-text
+    &:hover
+    	border: 1px solid $h-color
+    	color: $h-color
+.dark-curtains
+	background: rgba(0, 0, 0, 0.8)
+	line-height: 320px
+	text-align: center
+	text-transform: uppercase
+	color: $menu-text
+	transition: all 0.2s
+	//cursor: pointer
+	&:hover
+		display: none
+
+

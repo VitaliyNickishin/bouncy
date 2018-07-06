@@ -208,22 +208,23 @@ body {
     margin: 0;
     padding: 40px 0 35px;
     display: inline-block; }
-  .about__button {
-    display: inline-block;
-    padding: 6px 30px;
-    -webkit-border-radius: 20px;
-            border-radius: 20px;
-    border: 1px solid #4e555f;
-    background: transparent;
-    color: #4e555f;
-    text-decoration: none; }
-    .about__button:hover {
-      background: #10b292;
-      color: #fff;
-      border: 1px solid #fff;
-      text-decoration: none; }
   .about__ipad {
     padding: 85px 0 0 155px; }
+
+.submit {
+  display: inline-block;
+  padding: 6px 30px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  border: 1px solid #4e555f;
+  background: transparent;
+  color: #4e555f;
+  text-decoration: none; }
+  .submit:hover {
+    background: #10b292;
+    color: #fff;
+    border: 1px solid #fff;
+    text-decoration: none; }
 
 .details {
   background: #f3f3f3; }
@@ -274,23 +275,50 @@ body {
     text-align: left;
     font-size: 14px; }
 
-.projects__img-layer83 {
-  background: url(../img/Layer-83.jpg) no-repeat center;
-  width: 700px;
+.projects__img {
   height: 320px; }
+  .projects__img-layer83 {
+    background: url(../img/Layer-83.jpg) no-repeat center;
+    width: 50%; }
+  .projects__img-layer17 {
+    background: url(../img/Layer-17.jpg) no-repeat center;
+    width: 25%; }
+  .projects__img-layer18 {
+    background: url(../img/Layer-18.jpg) no-repeat center;
+    width: 25%; }
 
-.projects__img-layer17 {
-  background: url(../img/Layer-17.jpg) no-repeat center;
-  width: 335px;
-  height: 320px; }
+.projects-bg {
+  background: url(../img/Layer-1.jpg) no-repeat center; }
 
-.projects__img-layer18 {
-  background: url(../img/Layer-18.jpg) no-repeat center;
-  width: 330px;
-  height: 320px;
-  margin-right: 0; }
-
-.projects__img-down {
-  width: 100%;
+.projects__panel {
   height: 115px;
-  background: #10b292; }
+  width: 100%;
+  background: #10b292;
+  color: #fff;
+  opacity: 0.8; }
+  .projects__panel-text p {
+    margin: 0;
+    padding-left: 165px;
+    line-height: 115px;
+    width: 755px; }
+  .projects__panel-button {
+    padding-top: 35px;
+    margin-left: 135px; }
+    .projects__panel-button a {
+      border: 1px solid #fff;
+      color: #fff; }
+      .projects__panel-button a:hover {
+        border: 1px solid #4e555f;
+        color: #4e555f; }
+
+.dark-curtains {
+  background: rgba(0, 0, 0, 0.8);
+  line-height: 320px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; }
+  .dark-curtains:hover {
+    display: none; }
