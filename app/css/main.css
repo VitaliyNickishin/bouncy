@@ -331,7 +331,8 @@ body {
     display: none; }
 
 .services__icons {
-  text-align: right; }
+  text-align: right;
+  padding-bottom: 125px; }
   .services__icons li {
     padding-bottom: 15px; }
     .services__icons li a {
@@ -345,13 +346,21 @@ body {
 .services__title-graphic p {
   margin: 0;
   padding-top: 30px;
-  width: 405px; }
+  width: 405px;
+  font-size: 14px; }
 
 .services__progress {
-  display: block; }
-  .services__progress li {
-    width: 110px;
-    height: 110px;
-    -webkit-border-radius: 5px solid #10b292;
-            border-radius: 5px solid #10b292;
-    display: inline-block; }
+  padding: 40px 0 0 85px;
+  color: #a3a6ac; }
+  .services__progress-circle {
+    padding-right: 40px;
+    text-align: center;
+    position: relative; }
+    .services__progress-circle:after {
+      content: "%";
+      position: absolute;
+      top: 52px;
+      left: 75px;
+      font-size: 14px; }
+    .services__progress-circle p {
+      padding-top: 10px; }

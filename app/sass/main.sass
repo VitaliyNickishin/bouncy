@@ -212,13 +212,14 @@ body
 .services //блок для 5 страницы
 	&__title
   @extend .details__title //наследуем от заголовка c общими параметрами
-	&__icons
+	&__icons //блок с иконками
 		text-align: right
+		padding-bottom: 125px
   li
   	padding-bottom: 15px
   	a
   		display: inline-block
-	&__title-graphic
+	&__title-graphic //блок с контентом
 		h5
    margin: 0
 	  font-size: 20px
@@ -227,12 +228,20 @@ body
   	margin: 0
   	padding-top: 30px
   	width: 405px
-	&__progress
-		display: block
-		li
-			width: 110px
-			height: 110px
-			border-radius: 5px solid $active-color
-			display: inline-block
-  
+  	font-size: 14px
+	&__progress //блок с круговыми диаграммами
+		padding: 40px 0 0 85px
+		color: $body-text
+		&-circle
+			padding-right: 40px
+			text-align: center
+			position: relative
+			&:after //для процентов
+				content: "%"
+				position: absolute
+    top: 52px
+    left: 75px
+    font-size: 14px
+			p
+				padding-top: 10px
 
