@@ -295,19 +295,19 @@ body {
     width: 330px; }
 
 .projects-bg {
-  background: url(../img/Layer-1.jpg) no-repeat center; }
+  background: url(../img/Layer-84.jpg) no-repeat center; }
 
 .projects__panel {
   height: 115px;
   width: 100%;
-  background: #10b292;
-  color: #fff;
-  opacity: 0.8; }
+  background: rgba(24, 164, 134, 0.9);
+  color: #fff; }
   .projects__panel-text p {
     margin: 0;
     padding-left: 165px;
     line-height: 115px;
-    width: 755px; }
+    width: 755px;
+    font-size: 20px; }
   .projects__panel-button {
     padding-top: 35px;
     margin-left: 135px; }
@@ -320,6 +320,8 @@ body {
 
 .dark-curtains {
   background: rgba(0, 0, 0, 0.8);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
   line-height: 320px;
   text-align: center;
   text-transform: uppercase;
@@ -364,3 +366,37 @@ body {
       font-size: 14px; }
     .services__progress-circle p {
       padding-top: 10px; }
+
+.team-quotes {
+  background: url(../img/Layer-9.jpg) no-repeat 50% 40%; }
+  .team-quotes__dark {
+    background: rgba(0, 0, 0, 0.9); }
+  .team-quotes__left-part {
+    color: #fff;
+    padding: 75px 0 100px;
+    width: 600px; }
+    .team-quotes__left-part h5 {
+      margin: 0;
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: 4px; }
+    .team-quotes__left-part p {
+      margin: 0; }
+    .team-quotes__left-part_citation {
+      padding-top: 50px; }
+    .team-quotes__left-part_director {
+      padding-top: 20px;
+      text-transform: uppercase; }
+  .team-quotes__img {
+    margin-top: -37px;
+    padding-left: 100px;
+    position: relative; }
+    .team-quotes__img p {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 900;
+      color: #fff;
+      text-transform: uppercase;
+      position: absolute;
+      top: 110px;
+      left: 240px;
+      font-size: 30px; }

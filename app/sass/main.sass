@@ -176,19 +176,24 @@ body
 	 	width: 330px
 	 	//width: 25%
  &-bg
- 	background: url(../img/Layer-1.jpg) no-repeat center
+ 	//background: $active-color
+ 	background: url(../img/Layer-84.jpg) no-repeat center
  &__panel //изображение нижнее под прозрач. фоном
   height: 115px
   width: 100%
-  background: $active-color
+  //background: url(../img/Layer-85.jpg) no-repeat center
+  background: rgba(24, 164, 134, 0.9)
+  //background: hsla(167, 10%, 10%, 0.7)
+  //background: $active-color
   color: $menu-text
-  opacity: 0.8
+  //opacity: 0.8
   &-text //блок для текста
  	 p
  	 	margin: 0
  	 	padding-left: 165px
  	 	line-height: 115px
  	 	width: 755px
+ 	 	font-size: 20px
  	&-button //блок для кнопки
  		padding-top: 35px
  		margin-left: 135px
@@ -200,6 +205,8 @@ body
     	color: $h-color
 .dark-curtains //общий прозрачныый темный фон
 	background: rgba(0, 0, 0, 0.8)
+	font-family: 'Source Sans Pro', sans-serif
+	font-size: 20px
 	line-height: 320px
 	text-align: center
 	text-transform: uppercase
@@ -245,3 +252,42 @@ body
 			p
 				padding-top: 10px
 
+.team-quotes //блок для 6 страницы
+ background: url(../img/Layer-9.jpg) no-repeat 50% 40%
+ //background: rgba(0, 0, 0, 0.8)
+ //width: 1366px
+ //height: 391px
+ &__dark
+  background: rgba(0, 0, 0, 0.9)
+ &__left-part
+ 	color: $menu-text
+ 	padding: 75px 0 100px
+ 	width: 600px
+  h5
+   margin: 0
+	  font-size: 20px
+	  text-transform: uppercase
+	  letter-spacing: 4px
+  p
+  	margin: 0
+  &_citation
+  	padding-top: 50px 
+  &_director
+  	padding-top: 20px
+  	text-transform: uppercase
+ &__img //картинка с монитором
+ 	margin-top: -37px
+ 	padding-left: 100px
+ 	//width: 409px
+ 	//height: 328px
+ 	position: relative
+ 	p //надпись Bouncy
+ 		font-family: 'Roboto', sans-serif
+	  font-weight: 900
+	  color: $menu-text
+	  text-transform: uppercase
+ 		position: absolute
+ 		top: 110px
+ 		left: 240px
+ 		font-size: 30px
+ 		
