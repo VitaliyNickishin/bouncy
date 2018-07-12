@@ -1,15 +1,84 @@
 @import "colors"//интегрируем переменные с цветами
 @import "fontello"//иконки с fontello
 
+/*Спецификация*/
+
 ul
-	list-style: none
 	padding: 0
 	margin: 0
+	list-style: none
+
 body
  font-family: 'Open Sans', sans-serif
  font-size: 16px
  font-weight: 400
  color: $body-text
+
+.banner //общая шапка 
+	padding: 75px 0 60px
+ text-align: center
+.banner-title //общий заголовок 
+ margin: 0
+ padding-bottom: 35px
+	font-family: 'Source Sans Pro', sans-serif
+	font-size: 20px
+	color: $h-color
+	letter-spacing: 4px
+	text-transform: uppercase
+.banner-text //общий контент
+ margin: 0
+ display: inline-block
+ width: 460px
+
+.submit //кнопка с общими свойствами
+ display: inline-block
+ padding: 6px 30px
+ border-radius: 20px
+ border: 1px solid $h-color
+ background: transparent
+ color: $h-color
+ text-decoration: none
+ &:hover
+ 	background: $active-color
+ 	color: $menu-text
+ 	border: 1px solid $menu-text
+ 	text-decoration: none
+
+.green //общий span
+ color: $active-color
+ font-weight: 700
+
+.black //общий strong
+ color: $h-color
+
+.icons //общие иконки
+ li
+ 	a
+ 		display: inline-block
+ 		width: 50px
+ 		height: 50px
+ 		border-radius: 50%
+ 		text-align: center
+ 		background: $icons-bg
+ 		color: $menu-text
+ 		font-size: 20px
+ 		line-height: 50px
+ 		text-decoration: none
+ 		&:hover
+ 			background: $active-color
+
+.dark-curtains //общий прозрачныый темный фон
+	background: rgba(0, 0, 0, 0.8)
+	font-family: 'Source Sans Pro', sans-serif
+	font-size: 20px
+	line-height: 320px
+	text-align: center
+	text-transform: uppercase
+	color: $menu-text
+	transition: all 0.2s
+	//cursor: pointer
+	&:hover
+		display: none
 
 .header //блок для 1 страницы
 	background: url(../img/Layer-1.jpg) no-repeat 50% 100%
@@ -19,7 +88,7 @@ body
  	background: rgba(0, 0, 0, 0.3)
  	//background: hsla(10, 10%, 10%, 0.2)
  &-logo // логотип
- 	padding: 40px 0 0 25px
+ 	margin-top: 40px
  	font-family: 'Roboto', sans-serif
 	 font-weight: 900
 	 font-size: 25px
@@ -28,7 +97,7 @@ body
 	  color: $menu-text
 	  text-decoration: none
  &-menu // меню
- 	padding-top: 40px
+ 	margin-top: 40px
 	 &__item //элементы меню
 	 	margin: 0
 	 	padding: 6px 19px
@@ -70,52 +139,18 @@ body
  	  line-height: 35px
    
 .about //блок для 2 страницы
- padding: 0 175px 55px 250px
  &__title
- 	padding: 105px 0 0 0
- 	width: 475px
-  &-common //заголовок
-	 	margin: 0
-	 	font-family: 'Source Sans Pro', sans-serif
-	  font-size: 20px
-	  color: $h-color
-	  letter-spacing: 4px
-	  text-transform: uppercase
- p //контент
-  margin: 0
-  padding: 40px 0 35px
-  display: inline-block
+ 	margin: 110px 0 100px 165px 
+ &__button
+ 	padding-top: 30px
  &__ipad //изображение 
-  padding: 85px 0 0 155px 
-.submit //кнопка с общими свойствами
- display: inline-block
- padding: 6px 30px
- border-radius: 20px
- border: 1px solid $h-color
- background: transparent
- color: $h-color
- text-decoration: none
- &:hover
- 	background: $active-color
- 	color: $menu-text
- 	border: 1px solid $menu-text
- 	text-decoration: none
- 
+  margin: 85px 0 0 120px
 
 .details //блок для 3 страницы
  background: $details-bg
- //padding-bottom: 84px
- &__title //заголовок c общими параметрами
- 	padding: 75px 0 60px
- 	text-align: center
- 	h5 //заголовок
- 		margin: 0
- 		padding-bottom: 35px
- 	 @extend .about__title-common //наследуем
-  p //контент
-   margin: 0
-   display: inline-block
-   width: 455px
+ &__icons
+ 	li
+   padding-right: 25px
  &__title-creative //нижний блок
  	padding: 60px 0 35px 90px 
  	text-align: left
@@ -135,31 +170,8 @@ body
 	 	font-size: 14px
 	 	width: 520px
 	 	line-height: 1.7
-.green //общий span
- color: $active-color
- font-weight: 700
-.black //общий strong
- color: $h-color
-.icons //общие иконки
- li
- 	padding-right: 25px
- 	a
- 		display: block
- 		width: 50px
- 		height: 50px
- 		border-radius: 50%
- 		text-align: center
- 		background: $icons-bg
- 		color: $menu-text
- 		font-size: 20px
- 		line-height: 50px
- 		text-decoration: none
- 		&:hover
- 			background: $active-color
 
 .projects //блок для 4 страницы
-	&__title //заголовок
-		@extend .details__title //наследуем от заголовка c общими параметрами
  &__img //три изображения
  	height: 320px
  	//width: 1370px
@@ -176,21 +188,16 @@ body
 	 	width: 330px
 	 	//width: 25%
  &-bg
- 	//background: $active-color
  	background: url(../img/Layer-84.jpg) no-repeat center
  &__panel //изображение нижнее под прозрач. фоном
   height: 115px
   width: 100%
-  //background: url(../img/Layer-85.jpg) no-repeat center
   background: rgba(24, 164, 134, 0.9)
-  //background: hsla(167, 10%, 10%, 0.7)
-  //background: $active-color
   color: $menu-text
-  //opacity: 0.8
   &-text //блок для текста
  	 p
  	 	margin: 0
- 	 	padding-left: 165px
+ 	 	padding-left: 70px
  	 	line-height: 115px
  	 	width: 755px
  	 	font-size: 20px
@@ -203,25 +210,13 @@ body
     &:hover
     	border: 1px solid $h-color
     	color: $h-color
-.dark-curtains //общий прозрачныый темный фон
-	background: rgba(0, 0, 0, 0.8)
-	font-family: 'Source Sans Pro', sans-serif
-	font-size: 20px
-	line-height: 320px
-	text-align: center
-	text-transform: uppercase
-	color: $menu-text
-	transition: all 0.2s
-	//cursor: pointer
-	&:hover
-		display: none
+    	background: transparent
 
 .services //блок для 5 страницы
-	&__title
-  @extend .details__title //наследуем от заголовка c общими параметрами
 	&__icons //блок с иконками
-		text-align: right
-		padding-bottom: 125px
+		margin: 0 0 125px 70px
+		display: block
+		text-align: center
   li
   	padding-bottom: 15px
   	a
@@ -237,7 +232,7 @@ body
   	width: 405px
   	font-size: 14px
 	&__progress //блок с круговыми диаграммами
-		padding: 40px 0 0 85px
+		margin: 40px 0 0 85px
 		color: $body-text
 		&-circle
 			padding-right: 40px
@@ -291,3 +286,4 @@ body
  		left: 240px
  		font-size: 30px
  		
+.portfolio //блок для 7 страницы
