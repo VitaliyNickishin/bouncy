@@ -8,6 +8,9 @@ ul
 	margin: 0
 	list-style: none
 
+p, h1, h5
+	margin: 0
+
 body
  font-family: 'Open Sans', sans-serif
  font-size: 16px
@@ -17,8 +20,7 @@ body
 .banner //общая шапка 
 	padding: 75px 0 60px
  text-align: center
-.banner-title //общий заголовок 
- margin: 0
+.banner-title //общий заголовок
  padding-bottom: 35px
 	font-family: 'Source Sans Pro', sans-serif
 	font-size: 20px
@@ -26,9 +28,9 @@ body
 	letter-spacing: 4px
 	text-transform: uppercase
 .banner-text //общий контент
- margin: 0
  display: inline-block
  width: 460px
+ font-size: 14px
 
 .submit //кнопка с общими свойствами
  display: inline-block
@@ -68,7 +70,7 @@ body
  			background: $active-color
 
 .dark-curtains //общий прозрачныый темный фон
-	background: rgba(0, 0, 0, 0.8)
+	//background: rgba(0, 0, 0, 0.5)
 	font-family: 'Source Sans Pro', sans-serif
 	font-size: 20px
 	line-height: 320px
@@ -80,13 +82,29 @@ body
 	&:hover
 		display: none
 
-.header //блок для 1 страницы
-	background: url(../img/Layer-1.jpg) no-repeat 50% 100%
- opacity: 0.9
+/*1-й экран*/
+
+.header 
+	//background: url(../img/Layer-1.jpg) no-repeat 50% 100%
+ //opacity: 0.9
  color: $menu-text
+ //position: relative
+ //width: 1169px
+ //overflow: hidden
+ //height: 737px
+ //img
+ 	//position: absolute
+ 	//left: 75px
+ 	//margin: -168px 0 0 -50px
  &_dark-bg //темный прозрачный фон
- 	background: rgba(0, 0, 0, 0.3)
+ 	//background: rgba(0, 0, 0, 0.3)
  	//background: hsla(10, 10%, 10%, 0.2)
+ &-bg
+  background: url(../img/Layer-1.jpg) no-repeat 50% 100%
+ 	width: 1169px
+ 	//overflow: hidden
+ 	//img
+ 		//position: absolute
  &-logo // логотип
  	margin-top: 40px
  	font-family: 'Roboto', sans-serif
@@ -99,7 +117,6 @@ body
  &-menu // меню
  	margin-top: 40px
 	 &__item //элементы меню
-	 	margin: 0
 	 	padding: 6px 19px
 	 	border-radius: 20px
 	 	border: 1px solid transparent
@@ -112,14 +129,12 @@ body
 		margin: 210px 0 220px
 		text-align: center
 		h1 //главный заголовок
-			margin: 0
 			font-family: 'Source Sans Pro', sans-serif
 			font-size: 35px
 			font-weight: 300
 			letter-spacing: 6px
 			text-transform: uppercase
 		p //контент
-			margin: 0
 			padding-top: 30px
 			display: inline-block
 			width: 630px
@@ -155,55 +170,53 @@ body
  	padding: 60px 0 35px 90px 
  	text-align: left
  	h5 //заголовок
-	 	margin: 0
 	  font-size: 20px
 	  color: $h-color
 	  padding-bottom: 30px
   p //текст
-	  margin: 0
 	  width: 330px
  &__text-creative-right //нижний текст справа
   padding: 114px 80px 95px 0
  	text-align: left
  	p
-	 	margin: 0
 	 	font-size: 14px
 	 	width: 520px
 	 	line-height: 1.7
 
 .projects //блок для 4 страницы
- &__img //три изображения
- 	height: 320px
- 	//width: 1370px
-	 &-layer83
-	 	background: url(../img/Layer-83.jpg) no-repeat center
-	 	width: 700px
-	 	//width: 50%
-	 &-layer17
-	 	background: url(../img/Layer-17.jpg) no-repeat center
-	 	width: 335px
-	 	//width: 25%
-	 &-layer18
-	 	background: url(../img/Layer-18.jpg) no-repeat center
-	 	width: 330px
-	 	//width: 25%
+	&__img-layer83
+	 width: 600px
+	 height: 320px
+	 overflow: hidden
+	 img
+	 	margin-left: -100px
+	&__img-layer17
+	 width: 335px
+	 height: 320px
+	 overflow: hidden
+	 img
+	 	margin-left: -150px
+	&__img-layer18
+	 width: 255px
+	 height: 320px
+	 overflow: hidden
+	 img
+	 	margin-left: -100px
  &-bg
  	background: url(../img/Layer-84.jpg) no-repeat center
  &__panel //изображение нижнее под прозрач. фоном
-  height: 115px
-  width: 100%
+  //height: 115px
+  //width: 100%
   background: rgba(24, 164, 134, 0.9)
   color: $menu-text
   &-text //блок для текста
  	 p
- 	 	margin: 0
- 	 	padding-left: 70px
- 	 	line-height: 115px
- 	 	width: 755px
+ 	 	padding: 40px 0 40px 70px
+ 	 	width: 745px
  	 	font-size: 20px
  	&-button //блок для кнопки
- 		padding-top: 35px
- 		margin-left: 135px
+ 		margin-top: 37px
+ 		margin-left: 50px
  		a //переопределяем стили
     border: 1px solid $menu-text
     color: $menu-text
@@ -223,11 +236,9 @@ body
   		display: inline-block
 	&__title-graphic //блок с контентом
 		h5
-   margin: 0
 	  font-size: 20px
 	  color: $h-color
   p
-  	margin: 0
   	padding-top: 30px
   	width: 405px
   	font-size: 14px
@@ -259,12 +270,9 @@ body
  	padding: 75px 0 100px
  	width: 600px
   h5
-   margin: 0
 	  font-size: 20px
 	  text-transform: uppercase
 	  letter-spacing: 4px
-  p
-  	margin: 0
   &_citation
   	padding-top: 50px 
   &_director
@@ -287,3 +295,36 @@ body
  		font-size: 30px
  		
 .portfolio //блок для 7 страницы
+	&-menu
+		margin: 15px 0 75px
+		&__item
+   margin-right: 30px
+			a
+    font-family: 'Open Sans', sans-serif
+    font-size: 16px
+    color: $h-color
+    text-decoration: none
+
+ &__img-layer-86
+ 	width: 270px
+ 	height: 360px
+ &__img-layer-87
+ 	width: 270px
+ 	height: 230px
+ 	overflow: hidden
+ 	img
+  	margin-left: -90px
+ &__img-layer-91
+ 	margin-left: -5px
+ 	width: 270px
+ 	height: 300px
+  overflow: hidden
+  img
+  	margin-left: -90px
+ &__img-layer-88
+ 	margin-left: -10px
+ 	width: 270px
+ 	height: 360px
+ 	overflow: hidden	
+  img
+  	margin-left: -150px
