@@ -518,12 +518,17 @@ body {
     text-align: center;
     padding-bottom: 55px; }
 
-.team__card-director {
+.team__img-layer103 {
+  margin-left: 70px; }
+  .team__img-layer103 h5 {
+    color: #4e555f; }
+
+.visit-card {
   text-align: right;
   margin-right: 115px; }
-  .team__card-director h5 {
+  .visit-card__name {
     color: #4e555f; }
-    .team__card-director h5:after {
+    .visit-card__name:after {
       content: "";
       display: block;
       height: 42px;
@@ -531,35 +536,32 @@ body {
       position: absolute;
       right: 80px;
       top: 2px; }
-  .team__card-director i {
+  .visit-card__position {
     text-transform: uppercase;
     font-size: 14px;
     display: inline-block;
     margin-bottom: 30px; }
-  .team__card-director p {
+  .visit-card__text {
     font-size: 14px; }
-
-.team__skillbox {
-  margin: 45px 0 0 0px;
-  text-transform: uppercase;
-  position: relative; }
-  .team__skillbox-title {
-    position: absolute;
-    left: 0; }
-  .team__skillbox-persent {
-    margin-bottom: 6px; }
-  .team__skillbox-skill {
-    background: #e1e4e9; }
-    .team__skillbox-skill_level {
-      background: #10b292;
-      width: 80%;
-      height: 4px;
-      -webkit-transition: 0.4s linear;
-      -o-transition: 0.4s linear;
-      transition: 0.4s linear;
-      -webkit-transition-property: width, background;
-      -o-transition-property: width, background;
-      transition-property: width, background; }
+  .visit-card__skillbox {
+    margin: 45px 0 0 0px;
+    text-transform: uppercase; }
+    .visit-card__skillbox-content {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 20px;
+      margin-bottom: 4px; }
+    .visit-card__skillbox-skill {
+      background: #e1e4e9; }
+      .visit-card__skillbox-skill_level {
+        background: #10b292;
+        width: 80%;
+        height: 4px;
+        -webkit-transition: 0.4s linear;
+        -o-transition: 0.4s linear;
+        transition: 0.4s linear;
+        -webkit-transition-property: width, background;
+        -o-transition-property: width, background;
+        transition-property: width, background; }
 
 /* 320 - 480 px */
 @media screen and (max-width: 480px) {
