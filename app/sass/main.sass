@@ -20,17 +20,23 @@ body
 .banner //общая шапка 
 	padding: 75px 0 60px
  text-align: center
-.banner-title //общий заголовок
- padding-bottom: 35px
-	font-family: 'Source Sans Pro', sans-serif
+ &__title //общий заголовок
+  padding-bottom: 35px
+	 font-family: 'Source Sans Pro', sans-serif
+	 font-size: 20px
+	 color: $h-color
+	 letter-spacing: 4px
+	 text-transform: uppercase
+	&__text //общий контент
+	 display: inline-block
+	 width: 460px
+	 font-size: 14px
+
+.small-title //маленький заголовок 
 	font-size: 20px
 	color: $h-color
-	letter-spacing: 4px
-	text-transform: uppercase
-.banner-text //общий контент
- display: inline-block
- width: 460px
- font-size: 14px
+.small-text
+	font-size: 14px
 
 .submit //кнопка с общими свойствами темная
  display: inline-block
@@ -79,204 +85,200 @@ body
 
 .dark-curtains //общий прозрачныый темный фон
 	background: rgba(0, 0, 0, 0.9)
-
-.dark-curtains-text
-	font-family: 'Source Sans Pro', sans-serif
-	font-size: 20px
-	line-height: 320px
-	text-align: center
-	text-transform: uppercase
-	color: $menu-text
+	&__text
+		font-family: 'Source Sans Pro', sans-serif
+		font-size: 20px
+		line-height: 320px
+		text-align: center
+		text-transform: uppercase
+		color: $menu-text
 
 .panel //общий прозрачныый зеленый фон
  background: rgba(24, 164, 134, 0.9)
  color: $menu-text
 
 /*Hero section*/
-
 .header
 	background: url(../img/Layer-1.jpg) no-repeat 50% 100%
  opacity: 0.9
  color: $menu-text
  //height: 100vh
  //width: 1370px
- &_dark-bg //темный прозрачный фон
- 	background: rgba(0, 0, 0, 0.3)
- 	//background: hsla(10, 10%, 10%, 0.2)
- &-logo // логотип
- 	margin-top: 40px
- 	font-family: 'Roboto', sans-serif
-	 font-weight: 900
-	 font-size: 25px
-	 text-transform: uppercase
-	 a
-	  color: $menu-text
-	  text-decoration: none
- &-menu // меню
- 	margin-top: 40px
-	 &__item //элементы меню
-	 	padding: 6px 19px
-	 	border-radius: 20px
-	 	border: 1px solid transparent
-	 	&:hover //при наведении
-			 border: 1px solid $menu-text //белая рамка
-		 a
-		 	color: $menu-text
-			 text-decoration: none
-	&-title //блок с контентом
-		margin: 210px 0 220px
-		text-align: center
-		h1 //главный заголовок
-			font-family: 'Source Sans Pro', sans-serif
-			font-size: 35px
-			font-weight: 300
-			letter-spacing: 6px
-			text-transform: uppercase
-		p //контент
-			padding-top: 30px
-			display: inline-block
-			width: 630px
-			line-height: 1.8rem
- &-arrow //блок для стрелки
- 	text-align: center
- 	margin-bottom: 75px
-	 a
-	 	i
- 	 	display: inline-block
- 	 	width: 35px
- 	  height: 35px
- 	  border-radius: 50%
- 	  background: $active-color
- 	  color: $menu-text
- 	  text-align: center
- 	  line-height: 35px
-   
-.about //блок для 2 страницы
- &__title
- 	margin: 110px 0 100px 165px 
+.dark-bg //темный прозрачный фон
+ background: rgba(0, 0, 0, 0.3)
+.logo // логотип
+ margin-top: 40px
+ font-family: 'Roboto', sans-serif
+	font-weight: 900
+	font-size: 25px
+	text-transform: uppercase
+	a
+	 color: $menu-text
+	 text-decoration: none
+.menu // меню
+ margin-top: 40px
+	&__item //элементы меню
+	 padding: 6px 19px
+	 border-radius: 20px
+	 border: 1px solid transparent
+	 &:hover //при наведении
+			border: 1px solid $menu-text //белая рамка
+		a
+		 color: $menu-text
+			text-decoration: none
+.header-title //блок с контентом
+	margin: 210px 0 220px
+	text-align: center
+	h1 //главный заголовок
+		font-family: 'Source Sans Pro', sans-serif
+		font-size: 35px
+		font-weight: 300
+		letter-spacing: 6px
+		text-transform: uppercase
+	p //контент
+		padding-top: 30px
+		display: inline-block
+		width: 630px
+		line-height: 1.8rem
+.angle-down //блок для стрелки
+ text-align: center
+ margin-bottom: 75px
+	a
+	 i
+ 	 display: inline-block
+ 	 width: 35px
+ 	 height: 35px
+ 	 border-radius: 50%
+ 	 background: $active-color
+ 	 color: $menu-text
+ 	 text-align: center
+ 	 line-height: 35px
+
+/*Second section*/
+.history
+	margin: 110px 0 100px 165px
  &__button
  	padding-top: 30px
- &__ipad //изображение 
+.ipad //изображение 
   margin: 85px 0 0 120px
 
-.details //блок для 3 страницы
+/*Third section*/ 
+.details
  background: $details-bg
- &__icons
- 	li
-   padding-right: 25px
- &__title-creative //нижний блок
- 	padding: 60px 0 35px 90px 
- 	text-align: left
- 	h5 //заголовок
-	  font-size: 20px
-	  color: $h-color
-	  padding-bottom: 30px
-  p //текст
-	  width: 330px
- &__text-creative-right //нижний текст справа
-  padding: 114px 80px 95px 0
- 	text-align: left
- 	p
-	 	font-size: 14px
-	 	width: 520px
-	 	line-height: 1.7
+.details-icons
+ li
+  padding-right: 25px
+.creative //нижний блок
+ padding: 60px 0 35px 90px 
+ text-align: left
+ h5 //заголовок
+	 padding-bottom: 30px
+ p //текст
+	 width: 330px
+.creative-right //нижний текст справа
+ padding: 114px 80px 95px 0
+ text-align: left
+ p
+	 width: 520px
+	 line-height: 1.7
 
-.projects //блок для 4 страницы
-	&__img-layer83
-		background: url(../img/Layer-83.jpg) 
-	 width: 700px
-	 height: 320px
-	 margin-left: -100px
-	&__img-layer17
-		background: url(../img/Layer-17.jpg) 60% 50%
-	 width: 335px
-	 height: 320px
-	&__img-layer18
-	 background: url(../img/Layer-18.jpg) 100% 50%
-	 width: 355px
-	 height: 320px
- &__img-layer84 //изображение нижнее под прозрач. фоном
- 	background: url(../img/Layer-84.jpg) no-repeat center
-  margin-left: -100px
- 	width: 1310px
+/*Fourth section*/
+.projects 
+.img-layer83
+	background: url(../img/Layer-83.jpg) 
+	width: 600px
+	height: 320px
+	//margin-left: -100px
+.img-layer17
+	background: url(../img/Layer-17.jpg) 60% 50%
+	width: 335px
+	height: 320px
+.img-layer18
+	background: url(../img/Layer-18.jpg) 100% 50%
+	width: 255px
+	height: 320px
+.img-layer84 //изображение нижнее под прозрач. фоном
+ background: url(../img/Layer-84.jpg) no-repeat center
+ //margin-left: -100px
+ width: 1110px
  &__text //блок для текста
- 	p
- 	 padding: 40px 0 40px 170px
- 	 //width: 745px
- 	 font-size: 20px
+ 	padding: 40px 0 40px 70px
+ 	font-size: 20px
+  display: inline-block
+  width: 755px
  &__button //блок для кнопки
  	margin-top: 37px
- 	margin-right: 100px
+ 	margin-right: 70px
+  text-align: right
 
-.services //блок для 5 страницы
+/*Fifth section*/ 
+.services 
 	background: $details-bg
-	&__icons //блок с иконками
-		margin: 0 0 125px 70px
-		display: block
+.services-icons //блок с иконками
+	margin: 0 0 125px 70px
+	display: block
+	text-align: center
+ li
+  padding-bottom: 15px
+  a
+  	display: inline-block
+.graphic //блок с контентом
+ p
+  padding-top: 30px
+  width: 405px
+.circular //блок с круговыми диаграммами
+	margin: 40px 0 0 85px
+ color: $body-text
+ height: 170px
+	&__item
+		padding-right: 40px
 		text-align: center
-  li
-  	padding-bottom: 15px
-  	a
-  		display: inline-block
-	&__title-graphic //блок с контентом
-		h5
-	  font-size: 20px
-	  color: $h-color
-  p
-  	padding-top: 30px
-  	width: 405px
-  	font-size: 14px
-	&__progress //блок с круговыми диаграммами
-		margin: 40px 0 0 85px
-		color: $body-text
-		&-circle
-			padding-right: 40px
-			text-align: center
-			position: relative
-			&:after //для процентов
-				content: "%"
-				position: absolute
-    top: 52px
-    left: 75px
-    font-size: 14px
-			p
-				padding-top: 10px
+		position: relative
+		&:after //для процентов
+			content: "%"
+			position: absolute
+   top: 52px
+   left: 75px
+   font-size: 14px
+		p
+			padding-top: 10px
+	&__text
+		text-transform: uppercase
 
-.team-quotes //блок для 6 страницы
+/*Sixth section*/ 
+.team-quotes 
  background: url(../img/Layer-9.jpg) no-repeat 50% 40%
- //background: rgba(0, 0, 0, 0.8)
- //width: 1366px
- //height: 391px
- &__left-part
- 	color: $menu-text
- 	padding: 75px 0 100px
- 	width: 600px
-  h5
-	  font-size: 20px
-	  text-transform: uppercase
-	  letter-spacing: 4px
-  &_citation
-  	padding-top: 50px 
-  &_director
-  	padding-top: 20px
-  	text-transform: uppercase
- &__img //картинка с монитором
- 	margin-top: -37px
- 	padding-left: 100px
- 	//width: 409px
- 	//height: 328px
- 	position: relative
- 	p //надпись Bouncy
- 		font-family: 'Roboto', sans-serif
-	  font-weight: 900
-	  color: $menu-text
-	  text-transform: uppercase
- 		position: absolute
- 		top: 110px
- 		left: 240px
- 		font-size: 30px
- 		
-.portfolio //блок для 7 страницы
+.left-part
+ color: $menu-text
+ padding: 75px 0 100px
+ width: 600px
+ h5
+	 font-size: 20px
+	 text-transform: uppercase
+	 letter-spacing: 4px
+ &__citation
+  padding-top: 50px 
+ &__position
+  padding-top: 20px
+  text-transform: uppercase
+.monitor //картинка с монитором
+ margin-top: -37px
+ padding-left: 100px
+ //width: 409px
+ //height: 328px
+ position: relative
+ p //надпись Bouncy
+ 	font-family: 'Roboto', sans-serif
+	 font-weight: 900
+	 color: $menu-text
+	 text-transform: uppercase
+ 	position: absolute
+ 	top: 110px
+ 	left: 240px
+ 	font-size: 30px
+
+/*Seventh section*/  		
+.portfolio 
 	background: $details-bg
 	&-menu
 		margin: 15px 0 73px
@@ -298,60 +300,60 @@ body
     &:hover //при наведении на ссылку
     	&:after
       transform: translate(8px, 15px) scale(1) //появляется полоска,от середины на всю ширину
-	&__img-layer86 //1 img
-	 background: url(../img/Layer-86.jpg)
-	 width: 270px
-	 height: 360px
-	&__img-layer87 //2 img
-	 background: url(../img/Layer-87.jpg) 50% 50%
-	 width: 270px
-	 height: 230px
-	 margin-left: -5px
-	&__img-layer91 //3 img
-	 background: url(../img/Layer-91.jpg) 80% 50%
-		width: 270px
-		height: 300px
-	 margin-left: -10px
- &__img-layer88 //4 img
-	 background: url(../img/Layer-88.jpg) 70% 50%
-		width: 270px
-		height: 360px
-	 margin-left: -15px
-	&__img-layer90 //5 img
-	 margin-top: 10px
-	 background: url(../img/Layer-90.jpg) no-repeat center
-	 width: 270px
-	 height: 360px
-	&__img-layer95 //6 img
-	 margin: -120px 0 0 -5px
-	 background: url(../img/Layer-95.jpg) no-repeat 80% 50%
-	 width: 270px
-	 height: 342px
-	&__img-layer89 //7 img
-	 margin: -50px 0 0 -10px
-	 background: url(../img/Layer-89.jpg) no-repeat 80% 50%
+.img-layer86 //1 img
+	background: url(../img/Layer-86.jpg)
+ width: 270px
+	height: 360px
+.img-layer87 //2 img
+	background: url(../img/Layer-87.jpg) 50% 50%
+	width: 270px
+ height: 230px
+	margin-left: -5px
+.img-layer91 //3 img
+ background: url(../img/Layer-91.jpg) 80% 50%
+	width: 270px
+	height: 300px
+ margin-left: -10px
+.img-layer88 //4 img
+	background: url(../img/Layer-88.jpg) 70% 50%
+	width: 270px
+	height: 360px
+	margin-left: -15px
+.img-layer90 //5 img
+	margin-top: 10px
+	background: url(../img/Layer-90.jpg) no-repeat center
+	width: 270px
+	height: 360px
+.img-layer95 //6 img
+	margin: -120px 0 0 -5px
+	background: url(../img/Layer-95.jpg) no-repeat 80% 50%
+	width: 270px
+	height: 342px
+.img-layer89 //7 img
+	margin: -50px 0 0 -10px
+	background: url(../img/Layer-89.jpg) no-repeat 80% 50%
+	width: 270px
+	height: 373px
+	&__content
 	 width: 270px
 	 height: 373px
-	 &_content
-	 	width: 270px
-	  height: 373px
-	  padding: 105px 35px 0 40px
-	 	h5
-	 		font-family: 'Source Sans Pro', sans-serif
-				font-size: 20px
-				color: $active-color
-				letter-spacing: 4px
-				text-transform: uppercase
-				&:after //полоска подчеркивания заголовка
-				 content: ""
-				 width: 25px
-				 border-bottom: 1px solid $active-color
-				 position: absolute
-     top: 100px
-     left: 45px
-	 	p
-    margin: 50px 0 60px
-    font-size: 12px
+	 padding: 105px 35px 0 40px
+	 h5
+	 	font-family: 'Source Sans Pro', sans-serif
+			font-size: 20px
+			color: $active-color
+			letter-spacing: 4px
+			text-transform: uppercase
+			&:after //полоска подчеркивания заголовка
+				content: ""
+				width: 25px
+				border-bottom: 1px solid $active-color
+				position: absolute
+    top: 100px
+    left: 45px
+	 p
+   margin: 50px 0 60px
+   font-size: 12px
  &__icons
  	li
    margin-right: 7px
@@ -361,34 +363,34 @@ body
     background: $black
     font-size: 12px
     line-height: 28px
-	&__img-layer93 //8 img
-	 margin: -40px 0 0 -15px
-	 background: url(../img/Layer-93.jpg) no-repeat 30% 50%
-	 width: 270px
-	 height: 373px
-	&__img-layer92 //9 img
-	 margin-top: 10px
-	 background: url(../img/Layer-92.jpg) no-repeat 100% 50%
-	 width: 270px
-	 height: 210px
-	&__img-layer96 //10 img
-	 margin: -140px 0 0 -5px
-	 background: url(../img/Layer-96.jpg) no-repeat 70% 50%
-	 width: 270px
-	 height: 360px
-	&__img-layer94 //11 img
-	 margin: -38px 0 0 -10px
-	 background: url(../img/Layer-94.jpg) no-repeat 50% 50%
-	 width: 270px
-	 height: 258px
-	&__img-layer97 //12 img
-	 margin: -77px 0 0 -15px
-	 background: url(../img/Layer-97.jpg) no-repeat 5% 20%
-	 width: 270px
-	 height: 297px
- &__img-layer102 //down img
-  margin: 40px 0 100px
-  background: url(../img/Layer-102.jpg) no-repeat 50% 30%
+.img-layer93 //8 img
+	margin: -40px 0 0 -15px
+	background: url(../img/Layer-93.jpg) no-repeat 30% 50%
+ width: 270px
+	height: 373px
+.img-layer92 //9 img
+ margin-top: 10px
+ background: url(../img/Layer-92.jpg) no-repeat 100% 50%
+	width: 270px
+	height: 210px
+.img-layer96 //10 img
+	margin: -140px 0 0 -5px
+	background: url(../img/Layer-96.jpg) no-repeat 70% 50%
+	width: 270px
+	height: 360px
+.img-layer94 //11 img
+	margin: -38px 0 0 -10px
+	background: url(../img/Layer-94.jpg) no-repeat 50% 50%
+	width: 270px
+	height: 258px
+.img-layer97 //12 img
+	margin: -77px 0 0 -15px
+	background: url(../img/Layer-97.jpg) no-repeat 5% 20%
+	width: 270px
+	height: 297px
+.img-layer102 //down img
+ margin: 40px 0 100px
+ background: url(../img/Layer-102.jpg) no-repeat 50% 30%
  &__text
  	padding: 55px 0 25px
  	font-size: 20px
@@ -397,21 +399,10 @@ body
  	text-align: center
  	padding-bottom: 55px
 
- /*8 screen*/	
+ /*Eighth section*/	
 .team
-	&__img-layer103
-		margin-left: 70px
-		h5
-	  color: $h-color
-	  //font-size: 20px
-	  //font-family: 'Open Sans', sans-serif
-	  
-
-		i
-			
-		p
-			
-
+.img-layer103
+	margin-left: 70px
 .visit-card
 	text-align: right
 	margin-right: 115px
@@ -435,19 +426,16 @@ body
 		margin-bottom: 30px
 	&__text
   font-size: 14px
-
-	&__skillbox
-		margin: 45px 0 0 0px
-		text-transform: uppercase
-		//position: relative
-		//width: 330px
-		&-content
-   font-family: 'Source Sans Pro', sans-serif
-			font-size: 20px
-			margin-bottom: 4px
-		 &-title
-		 &-persent
-			//
+.skillbox
+	margin: 45px 0 0 0px
+	text-transform: uppercase
+	//position: relative
+	//width: 330px
+	&__info
+  font-family: 'Source Sans Pro', sans-serif
+		font-size: 20px
+		margin-bottom: 4px
+		
 		&-skill
 			background: $skill-bg
 			&_level
