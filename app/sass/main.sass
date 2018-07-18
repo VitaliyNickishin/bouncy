@@ -229,7 +229,6 @@ body
 .circular //блок с круговыми диаграммами
 	margin: 40px 0 0 85px
  color: $body-text
- height: 170px
 	&__item
 		padding-right: 40px
 		text-align: center
@@ -399,51 +398,44 @@ body
  	text-align: center
  	padding-bottom: 55px
 
- /*Eighth section*/	
+/*Eighth section*/
 .team
 .img-layer103
-	margin-left: 70px
+	margin: 0 0 60px 70px
 .visit-card
+	width: 370px
 	text-align: right
 	margin-right: 115px
-	//width: 370px
-	&__name
-		color: $h-color
-		//font-size: 20px
-	 //font-family: 'Open Sans', sans-serif
-	 &:after //вертикальная полоска
-	 	content: ""
-	 	display: block
-	 	height: 42px
-	 	border-right: 4px solid $active-color
-	 	position: absolute
-	 	right: 80px
-	 	top: 2px
-	&__position
+	&:after //вертикальная полоска
+	 content: ""
+	 display: block
+	 height: 42px
+	 border-right: 4px solid $active-color
+	 position: absolute
+	 right: 45px
+	 top: 2px
+	i
+		font-family: 'Source Sans Pro', sans-serif
 		text-transform: uppercase
-		font-size: 14px
 		display: inline-block
 		margin-bottom: 30px
-	&__text
-  font-size: 14px
+	
 .skillbox
-	margin: 45px 0 0 0px
+	margin: 40px 0 0 40px
 	text-transform: uppercase
-	//position: relative
-	//width: 330px
+	width: 330px
 	&__info
+  margin-top: 25px
   font-family: 'Source Sans Pro', sans-serif
-		font-size: 20px
 		margin-bottom: 4px
-		
-		&-skill
-			background: $skill-bg
-			&_level
-				background: $active-color
-				width: 80%
-				height: 4px
-				transition: 0.4s linear
-				transition-property: width, background
+	&__wrap
+		background: $skill-bg
+		&_level
+			background: $active-color
+			//width: 80%
+			height: 4px
+			//transition: 0.4s linear
+			//transition-property: width, background
 		
 
 
