@@ -18,19 +18,17 @@ body
  color: $body-text
 
 .banner //общая шапка 
-	padding: 75px 0 60px
  text-align: center
- &__title //общий заголовок
-  padding-bottom: 35px
-	 font-family: 'Source Sans Pro', sans-serif
-	 font-size: 20px
-	 color: $h-color
-	 letter-spacing: 4px
-	 text-transform: uppercase
-	&__text //общий контент
-	 display: inline-block
-	 width: 460px
-	 font-size: 14px
+.banner__title //общий заголовок
+	font-family: 'Source Sans Pro', sans-serif
+	font-size: 20px
+	color: $h-color
+	letter-spacing: 4px
+	text-transform: uppercase
+.banner__text //общий контент
+	display: inline-block
+	width: 460px
+	font-size: 14px
 
 .small-title //маленький заголовок 
 	font-size: 20px
@@ -60,7 +58,7 @@ body
   color: $h-color
   background: transparent 	
 
-.green //общий span
+.active //общий span
  color: $active-color
  font-weight: 700
 
@@ -157,6 +155,8 @@ body
 /*Second section*/
 .history
 	margin: 110px 0 100px 165px
+	&__title
+		padding-bottom: 35px
  &__button
  	padding-top: 30px
 .ipad //изображение 
@@ -165,25 +165,33 @@ body
 /*Third section*/ 
 .details
  background: $details-bg
-.details-icons
- li
-  padding-right: 25px
-.creative //нижний блок
+ &-banner
+ 	padding: 75px 0 60px
+  &__title
+   padding-bottom: 35px
+ &-icons
+  li
+   padding-right: 25px
+.creative-one //нижний блок
  padding: 60px 0 35px 90px 
  text-align: left
- h5 //заголовок
+ &__title //заголовок
 	 padding-bottom: 30px
- p //текст
+ &__text //текст
 	 width: 330px
-.creative-right //нижний текст справа
+.creative-two //нижний текст справа
  padding: 114px 80px 95px 0
  text-align: left
- p
+ &__text
 	 width: 520px
 	 line-height: 1.7
 
 /*Fourth section*/
 .projects 
+	&-banner
+		padding: 75px 0 60px
+	 &__title
+	 	padding-bottom: 30px
 .img-layer83
 	background: url(../img/Layer-83.jpg) 
 	width: 600px
@@ -214,18 +222,24 @@ body
 /*Fifth section*/ 
 .services 
 	background: $details-bg
-.services-icons //блок с иконками
-	margin: 0 0 125px 70px
-	display: block
-	text-align: center
- li
-  padding-bottom: 15px
-  a
-  	display: inline-block
+	&-banner
+		padding: 75px 0 60px
+		&__title
+			padding-bottom: 30px
+ &-icons //блок с иконками
+		margin: 0 0 125px 70px
+		display: block
+		text-align: center
+	 li
+	  padding-bottom: 15px
+	  a
+	  	display: inline-block
 .graphic //блок с контентом
- p
-  padding-top: 30px
+ &__title
+  padding-bottom: 30px
   width: 405px
+ &__text-one
+ 	padding-bottom: 30px
 .circular //блок с круговыми диаграммами
 	margin: 40px 0 0 85px
  color: $body-text
@@ -247,11 +261,11 @@ body
 /*Sixth section*/ 
 .team-quotes 
  background: url(../img/Layer-9.jpg) no-repeat 50% 40%
-.left-part
+.part-one
  color: $menu-text
  padding: 75px 0 100px
  width: 600px
- h5
+ &__title
 	 font-size: 20px
 	 text-transform: uppercase
 	 letter-spacing: 4px
@@ -279,6 +293,10 @@ body
 /*Seventh section*/  		
 .portfolio 
 	background: $details-bg
+	&-banner
+		padding: 75px 0 60px
+	 &__title
+	 	padding-bottom: 30px
 	&-menu
 		margin: 15px 0 73px
 		&__item
@@ -400,6 +418,10 @@ body
 
 /*Eighth section*/
 .team
+	&-banner
+		padding: 75px 0 60px
+	 &__title
+	 	padding-bottom: 30px
 .img-layer103
 	margin: 0 0 60px 70px
 .visit-card
