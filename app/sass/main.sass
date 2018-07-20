@@ -102,6 +102,9 @@ body
  border-radius: 50%
  cursor: pointer 
 
+.disabl /*радио-кнопки*/
+	display: none
+
 /*Hero section*/
 .header
 	background: url(../img/Layer-1.jpg) no-repeat 50% 100%
@@ -467,10 +470,8 @@ body
 			height: 4px
 			//transition: 0.4s linear
 			//transition-property: width, background
-.bullets  /*радио-переключатели*/
+.team-bullets  /*радио-переключатели*/
 	margin: 60px 0 100px
-	input
-		display: none
  &__ellipse
   margin: 0 10px 0 0
 #photo1
@@ -500,10 +501,55 @@ body
  &__button
  	//text-align: center
  	padding-bottom: 55px
+ 	
 
+/*Nineth section*/
+.testimonials
+	background: $details-bg
+	&-banner
+		padding: 75px 0 60px
+	 &__title
+	 	padding-bottom: 30px
+	&-bg
+		background: $menu-text
+ &-bullets
+  margin-bottom: 60px
+  &__ellipse
+   margin: 0 10px 0 0
+ &-empty
+ 	background: $details-bg
+ 	margin-top: 100px
+.img-layer439
+ padding: 50px 60px 60px 100px
+.founder	
+ &__text
+ 	padding-top: 50px
+ 	width: 770px
+ &__name
+  margin-top: 20px
+ 	text-transform: uppercase
+ &__art
+  text-transform: uppercase
+  color: $h-color
+#photo4
+	&:checked ~.label4
+		background: $active-color
+ //&:checked ~.img-layer103
+  //background: url(../img/Layer-103.jpg)
+#photo5
+	&:checked ~.label5
+		background: $active-color
+ //&:checked ~.img-layer449
+  //background: url(../img/Layer-449.jpg)
+#photo6
+	&:checked ~.label6
+		background: $active-color
+ //&:checked ~.img-layer446
+  //background: url(../img/Layer-446.jpg)
 
-
-
+.blog
+	background: url(../img/Layer-441.jpg)
+ 
 
 
 
