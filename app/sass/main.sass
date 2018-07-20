@@ -95,6 +95,13 @@ body
  background: rgba(24, 164, 134, 0.9)
  color: $menu-text
 
+.ellipse /*радио-кнопки*/
+ width: 10px
+ height: 10px
+ border: 1px solid $active-color
+ border-radius: 50%
+ cursor: pointer 
+
 /*Hero section*/
 .header
 	background: url(../img/Layer-1.jpg) no-repeat 50% 100%
@@ -423,7 +430,9 @@ body
 	 &__title
 	 	padding-bottom: 30px
 .img-layer103
-	margin: 0 0 60px 70px
+	margin-left: 70px
+	//width: 285px
+	//height: 364px
 .visit-card
 	width: 370px
 	text-align: right
@@ -458,8 +467,39 @@ body
 			height: 4px
 			//transition: 0.4s linear
 			//transition-property: width, background
-		
+.bullets  /*радио-переключатели*/
+	margin: 60px 0 100px
+	input
+		display: none
+ &__ellipse
+  margin: 0 10px 0 0
+#photo1
+	&:checked ~.label1
+		background: $active-color
+ &:checked ~.img-layer103
+  //background: url(../img/Layer-103.jpg)
+#photo2
+	&:checked ~.label2
+		background: $active-color
+ &:checked ~.img-layer449
+  //background: url(../img/Layer-449.jpg)
+#photo3
+	&:checked ~.label3
+		background: $active-color
+ &:checked ~.img-layer446
+  //background: url(../img/Layer-446.jpg)
 
+.img-layer104
+	background: url(../img/Layer-104.jpg)
+ text-align: center
+ color: $menu-text
+ &__text
+ 	padding: 55px 0 25px
+ 	font-size: 20px
+ 	//text-align: center
+ &__button
+ 	//text-align: center
+ 	padding-bottom: 55px
 
 
 

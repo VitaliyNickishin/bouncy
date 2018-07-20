@@ -219,6 +219,14 @@ body {
   background: rgba(24, 164, 134, 0.9);
   color: #fff; }
 
+.ellipse {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #10b292;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  cursor: pointer; }
+
 /*Hero section*/
 .header {
   background: url(../img/Layer-1.jpg) no-repeat 50% 100%;
@@ -573,7 +581,7 @@ body {
     padding-bottom: 30px; }
 
 .img-layer103 {
-  margin: 0 0 60px 70px; }
+  margin-left: 70px; }
 
 .visit-card {
   width: 370px;
@@ -606,6 +614,32 @@ body {
     .skillbox__wrap_level {
       background: #10b292;
       height: 4px; }
+
+.bullets {
+  margin: 60px 0 100px; }
+  .bullets input {
+    display: none; }
+  .bullets__ellipse {
+    margin: 0 10px 0 0; }
+
+#photo1:checked ~ .label1 {
+  background: #10b292; }
+
+#photo2:checked ~ .label2 {
+  background: #10b292; }
+
+#photo3:checked ~ .label3 {
+  background: #10b292; }
+
+.img-layer104 {
+  background: url(../img/Layer-104.jpg);
+  text-align: center;
+  color: #fff; }
+  .img-layer104__text {
+    padding: 55px 0 25px;
+    font-size: 20px; }
+  .img-layer104__button {
+    padding-bottom: 55px; }
 
 /* 320 - 480 px */
 @media screen and (max-width: 480px) {
