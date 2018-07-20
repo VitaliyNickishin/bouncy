@@ -227,6 +227,9 @@ body {
           border-radius: 50%;
   cursor: pointer; }
 
+.disabl {
+  display: none; }
+
 /*Hero section*/
 .header {
   background: url(../img/Layer-1.jpg) no-repeat 50% 100%;
@@ -615,11 +618,9 @@ body {
       background: #10b292;
       height: 4px; }
 
-.bullets {
+.team-bullets {
   margin: 60px 0 100px; }
-  .bullets input {
-    display: none; }
-  .bullets__ellipse {
+  .team-bullets__ellipse {
     margin: 0 10px 0 0; }
 
 #photo1:checked ~ .label1 {
@@ -640,6 +641,50 @@ body {
     font-size: 20px; }
   .img-layer104__button {
     padding-bottom: 55px; }
+
+/*Nineth section*/
+.testimonials {
+  background: #f3f3f3; }
+  .testimonials-banner {
+    padding: 75px 0 60px; }
+    .testimonials-banner__title {
+      padding-bottom: 30px; }
+  .testimonials-bg {
+    background: #fff; }
+  .testimonials-bullets {
+    margin-bottom: 60px; }
+    .testimonials-bullets__ellipse {
+      margin: 0 10px 0 0; }
+  .testimonials-empty {
+    background: #f3f3f3;
+    margin-top: 100px; }
+
+.img-layer439 {
+  padding: 50px 60px 60px 100px; }
+
+.founder__text {
+  padding-top: 50px;
+  width: 770px; }
+
+.founder__name {
+  margin-top: 20px;
+  text-transform: uppercase; }
+
+.founder__art {
+  text-transform: uppercase;
+  color: #4e555f; }
+
+#photo4:checked ~ .label4 {
+  background: #10b292; }
+
+#photo5:checked ~ .label5 {
+  background: #10b292; }
+
+#photo6:checked ~ .label6 {
+  background: #10b292; }
+
+.blog {
+  background: url(../img/Layer-441.jpg); }
 
 /* 320 - 480 px */
 @media screen and (max-width: 480px) {
