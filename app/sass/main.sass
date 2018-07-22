@@ -547,8 +547,9 @@ body
  //&:checked ~.img-layer446
   //background: url(../img/Layer-446.jpg)
 
+/*Tenth section*/
 .blog
-	background: url(../img/Layer-441.jpg)
+	background: url(../img/Layer-441.jpg) no-repeat center
  text-align: left
  &-banner
   padding: 75px 0 95px
@@ -582,6 +583,9 @@ body
   			border: none
   			background: transparent
  &-bullets
+ 	position: relative
+ 	top: 50%
+ 	left: 80%
  	&__ellipse
  		&_mod
 	   border: 1px solid #b2b3b3
@@ -601,13 +605,58 @@ body
  //&:checked ~.img-layer446
   //background: url(../img/Layer-446.jpg)
 
-
-
-
-
-
-
-
+/*Eleventh section*/
+.price
+	background: $details-bg
+	&-banner
+		padding: 75px 0 95px
+	 &__title
+	 	padding-bottom: 30px
+	 &__text
+.plans
+	width: 235px
+	height: 300px
+	text-align: center
+	font-size: 20px
+	background: $menu-text
+.plans-premium
+	margin: 0 0 100px 165px
+	&__title
+		height: 65px
+		line-height: 65px
+		background: $active-color
+		color: $menu-text
+		font-weight: 700
+		text-transform: uppercase
+	&__price
+	 padding-top: 45px
+	 font-family: 'Source Sans Pro', sans-serif	
+	 font-size: 42px
+	 font-weight: 900
+	&__text
+  margin-bottom: 100px
+.plans-standart
+	margin-left: 85px
+	&-wrap
+		padding: 30px 0 0 35px
+		text-align: left
+		font-size: 14px
+		height: 235px
+		&__text
+			padding-bottom: 10px
+	&__title
+  height: 65px
+		line-height: 65px
+		background: $active-color
+		color: $menu-text	
+	 font-size: 16px
+.plans-exclusive
+ &__title  
+  @extend .plans-premium__title
+ &__price
+  @extend .plans-premium__price
+ &__text
+ 	@extend .plans-premium__text
 
 
 
