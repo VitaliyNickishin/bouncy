@@ -621,6 +621,9 @@ body
 	background: $menu-text
 .plans-premium
 	margin: 0 0 100px 165px
+	transition: all 0.2s
+	&:hover
+	 box-shadow: 0 0 5px 0 $black
 	&__title
 		height: 65px
 		line-height: 65px
@@ -637,6 +640,9 @@ body
   margin-bottom: 100px
 .plans-standart
 	margin-left: 85px
+	transition: all 0.2s
+	&:hover
+	 box-shadow: 0 0 5px 0 $black
 	&-wrap
 		padding: 30px 0 0 35px
 		text-align: left
@@ -648,9 +654,17 @@ body
   height: 65px
 		line-height: 65px
 		background: $active-color
-		color: $menu-text	
 	 font-size: 16px
+	 a
+	  display: block
+	  text-decoration: none
+	  color: $menu-text
+	  &:hover
+	  	font-size: 18px
 .plans-exclusive
+	transition: all 0.2s
+	&:hover
+	 box-shadow: 0 0 5px 0 $black
  &__title  
   @extend .plans-premium__title
  &__price
@@ -658,13 +672,43 @@ body
  &__text
  	@extend .plans-premium__text
 
-
-
-
-
-
-
-
+/*Twelfth section*/
+.subscribe
+ background: url(../img/Layer-449.jpg) no-repeat 50% 80%
+ &-banner
+		padding: 75px 0 55px
+	 &__title
+	 	padding-bottom: 30px
+	 	color: $menu-text
+	&-form
+		text-align: center
+ 	font-size: 14px
+ 	margin-bottom: 100px
+  &__email
+  	height: 40px
+  	width: 360px
+  	background: transparent
+  	outline: none
+  	border: 1px solid $body-text
+  	border-top: 0
+  	padding-left: 20px
+  	color: $menu-text
+  	&::placeholder
+  	 color: $menu-text  
+  &__button
+  	margin-left: 5px
+  	width: 150px
+  	height: 40px
+  	color: $menu-text
+  	background: $active-color
+   border-radius: 0
+   border: none
+   text-transform: uppercase
+   cursor: pointer
+   &:hover
+   	border: none
+   	background: $details-bg
+   	color: $active-color
 
 
 
