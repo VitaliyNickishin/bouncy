@@ -710,6 +710,77 @@ body
    	background: $details-bg
    	color: $active-color
 
+/*Thirteenth section*/
+.contact
+	background: $details-bg
+	&-banner
+		padding: 75px 0 95px
+	 &__title
+	 	padding-bottom: 30px
+.email
+	margin-left: 84px
+ &-layer444
+		background: url(../img/Layer-444.jpg) no-repeat 50% 70%
+	 width: 287px
+	 height: 144px
+	 &__dark
+	 	text-align: center
+	 	background: rgba(0, 0, 0, 0.1)
+	 &__icon
+	  font-size: 50px
+	  line-height: 144px
+	  color: $menu-text
+ &-content
+		width: 287px
+		height: 128px
+		background: $menu-text
+		text-align: center
+		margin-bottom: 100px
+		&__title
+			color: $h-color
+			text-transform: uppercase
+			padding: 28px 0 18px
+		&__text
+	  text-transform: uppercase
+.office
+	margin-left: 25px
+ &-layer448
+  background: url(../img/Layer-448.jpg) no-repeat 50% 70%
+  @extend .email-layer444
+  &__dark
+   @extend .email-layer444__dark
+  &__icon
+  	@extend .email-layer444__icon
+ &-content
+	 @extend .email-content
+  &__title
+   @extend .email-content__title
+  &__text
+   @extend .email-content__text
+.phone
+	margin-left: -35px
+ &-layer447
+  background: url(../img/Layer-447.jpg) no-repeat 50% 70%
+  @extend .email-layer444
+  &__dark
+   @extend .email-layer444__dark
+  &__icon
+  	@extend .email-layer444__icon
+ &-content
+	 @extend .email-content
+  &__title
+   @extend .email-content__title
+  &__text
+   @extend .email-content__text
+
+
+
+
+
+
+
+
+
 
 
 

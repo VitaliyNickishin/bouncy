@@ -854,6 +854,50 @@ body {
         background: #f3f3f3;
         color: #10b292; }
 
+/*Thirteenth section*/
+.contact {
+  background: #f3f3f3; }
+  .contact-banner {
+    padding: 75px 0 95px; }
+    .contact-banner__title {
+      padding-bottom: 30px; }
+
+.email {
+  margin-left: 84px; }
+  .email-layer444, .office-layer448, .phone-layer447 {
+    background: url(../img/Layer-444.jpg) no-repeat 50% 70%;
+    width: 287px;
+    height: 144px; }
+    .email-layer444__dark, .office-layer448__dark, .phone-layer447__dark {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.1); }
+    .email-layer444__icon, .office-layer448__icon, .phone-layer447__icon {
+      font-size: 50px;
+      line-height: 144px;
+      color: #fff; }
+  .email-content, .office-content, .phone-content {
+    width: 287px;
+    height: 128px;
+    background: #fff;
+    text-align: center;
+    margin-bottom: 100px; }
+    .email-content__title, .office-content__title, .phone-content__title {
+      color: #4e555f;
+      text-transform: uppercase;
+      padding: 28px 0 18px; }
+    .email-content__text, .office-content__text, .phone-content__text {
+      text-transform: uppercase; }
+
+.office {
+  margin-left: 25px; }
+  .office-layer448 {
+    background: url(../img/Layer-448.jpg) no-repeat 50% 70%; }
+
+.phone {
+  margin-left: -35px; }
+  .phone-layer447 {
+    background: url(../img/Layer-447.jpg) no-repeat 50% 70%; }
+
 /* 320 - 480 px */
 @media screen and (max-width: 480px) {
   .header {
