@@ -750,7 +750,13 @@ body {
   background: #fff; }
 
 .plans-premium {
-  margin: 0 0 100px 165px; }
+  margin: 0 0 100px 165px;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; }
+  .plans-premium:hover {
+    -webkit-box-shadow: 0 0 5px 0 #000;
+            box-shadow: 0 0 5px 0 #000; }
   .plans-premium__title, .plans-exclusive__title {
     height: 65px;
     line-height: 65px;
@@ -767,7 +773,13 @@ body {
     margin-bottom: 100px; }
 
 .plans-standart {
-  margin-left: 85px; }
+  margin-left: 85px;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; }
+  .plans-standart:hover {
+    -webkit-box-shadow: 0 0 5px 0 #000;
+            box-shadow: 0 0 5px 0 #000; }
   .plans-standart-wrap {
     padding: 30px 0 0 35px;
     text-align: left;
@@ -779,8 +791,68 @@ body {
     height: 65px;
     line-height: 65px;
     background: #10b292;
-    color: #fff;
     font-size: 16px; }
+    .plans-standart__title a {
+      display: block;
+      text-decoration: none;
+      color: #fff; }
+      .plans-standart__title a:hover {
+        font-size: 18px; }
+
+.plans-exclusive {
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; }
+  .plans-exclusive:hover {
+    -webkit-box-shadow: 0 0 5px 0 #000;
+            box-shadow: 0 0 5px 0 #000; }
+
+/*Twelfth section*/
+.subscribe {
+  background: url(../img/Layer-449.jpg) no-repeat 50% 80%; }
+  .subscribe-banner {
+    padding: 75px 0 55px; }
+    .subscribe-banner__title {
+      padding-bottom: 30px;
+      color: #fff; }
+  .subscribe-form {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 100px; }
+    .subscribe-form__email {
+      height: 40px;
+      width: 360px;
+      background: transparent;
+      outline: none;
+      border: 1px solid #a3a6ac;
+      border-top: 0;
+      padding-left: 20px;
+      color: #fff; }
+      .subscribe-form__email::-webkit-input-placeholder {
+        color: #fff; }
+      .subscribe-form__email::-moz-placeholder {
+        color: #fff; }
+      .subscribe-form__email:-ms-input-placeholder {
+        color: #fff; }
+      .subscribe-form__email::-ms-input-placeholder {
+        color: #fff; }
+      .subscribe-form__email::placeholder {
+        color: #fff; }
+    .subscribe-form__button {
+      margin-left: 5px;
+      width: 150px;
+      height: 40px;
+      color: #fff;
+      background: #10b292;
+      -webkit-border-radius: 0;
+              border-radius: 0;
+      border: none;
+      text-transform: uppercase;
+      cursor: pointer; }
+      .subscribe-form__button:hover {
+        border: none;
+        background: #f3f3f3;
+        color: #10b292; }
 
 /* 320 - 480 px */
 @media screen and (max-width: 480px) {
