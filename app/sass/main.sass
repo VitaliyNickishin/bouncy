@@ -21,6 +21,12 @@ input
  outline: none
  border-top: 0
 
+.logo // логотип
+ font-family: 'Roboto', sans-serif
+	font-weight: 900
+	font-size: 25px
+	text-transform: uppercase
+
 .banner //общая шапка 
  text-align: center
 .banner__title //общий заголовок
@@ -125,17 +131,11 @@ input
  color: $menu-text
  //height: 100vh
  //width: 1370px
-.dark-bg //темный прозрачный фон
- background: rgba(0, 0, 0, 0.3)
-.logo // логотип
- margin-top: 40px
- font-family: 'Roboto', sans-serif
-	font-weight: 900
-	font-size: 25px
-	text-transform: uppercase
-	a
-	 color: $menu-text
-	 text-decoration: none
+	&-logo // логотип
+	 margin-top: 40px
+		a
+		 color: $menu-text
+		 text-decoration: none
 .menu // меню
  margin-top: 40px
 	&__item //элементы меню
@@ -176,6 +176,8 @@ input
  	&:hover
  	 color: $active-color
  	 background: $menu-text
+.dark-bg //темный прозрачный фон
+ background: rgba(0, 0, 0, 0.3)
 
 /*Second section*/
 .history
@@ -835,8 +837,37 @@ input
  	 	color: $active-color
  	 	background: $menu-text
 
-
-
+.footer
+	background: $details-bg
+	text-align: center
+	&__logo
+  margin: 70px 0 5px
+		a
+		 color: #323a45
+		 text-decoration: none
+ &__copy
+ &__social
+ 	margin: 30px 0 85px
+  &-facebook
+  	a
+  	 font-size: 25px
+  	 color: #3b5998
+  &-twitter
+  	a
+	  	font-size: 25px
+	  	color: #26a6d1
+  &-linkedin
+  	a
+	  	font-size: 25px
+	  	color: #0e76a8
+  &-instagram
+  	a
+	  	font-size: 25px
+	  	color: #3f729b
+  &-vimeo
+  	a
+	  	font-size: 25px
+	  	color: #86c9ef
 
 
 

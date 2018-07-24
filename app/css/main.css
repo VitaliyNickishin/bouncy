@@ -142,6 +142,12 @@ input {
   outline: none;
   border-top: 0; }
 
+.logo {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 25px;
+  text-transform: uppercase; }
+
 .banner {
   text-align: center; }
 
@@ -248,19 +254,11 @@ input {
   background: url(../img/Layer-1.jpg) no-repeat 50% 100%;
   opacity: 0.9;
   color: #fff; }
-
-.dark-bg {
-  background: rgba(0, 0, 0, 0.3); }
-
-.logo {
-  margin-top: 40px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-  font-size: 25px;
-  text-transform: uppercase; }
-  .logo a {
-    color: #fff;
-    text-decoration: none; }
+  .header-logo {
+    margin-top: 40px; }
+    .header-logo a {
+      color: #fff;
+      text-decoration: none; }
 
 .menu {
   margin-top: 40px; }
@@ -306,6 +304,9 @@ input {
     .angle-down__link:hover {
       color: #10b292;
       background: #fff; }
+
+.dark-bg {
+  background: rgba(0, 0, 0, 0.3); }
 
 /*Second section*/
 .history {
@@ -966,6 +967,32 @@ input {
       .map-dark__link:hover {
         color: #10b292;
         background: #fff; }
+
+.footer {
+  background: #f3f3f3;
+  text-align: center; }
+  .footer__logo {
+    margin: 70px 0 5px; }
+    .footer__logo a {
+      color: #323a45;
+      text-decoration: none; }
+  .footer__social {
+    margin: 30px 0 85px; }
+    .footer__social-facebook a {
+      font-size: 25px;
+      color: #3b5998; }
+    .footer__social-twitter a {
+      font-size: 25px;
+      color: #26a6d1; }
+    .footer__social-linkedin a {
+      font-size: 25px;
+      color: #0e76a8; }
+    .footer__social-instagram a {
+      font-size: 25px;
+      color: #3f729b; }
+    .footer__social-vimeo a {
+      font-size: 25px;
+      color: #86c9ef; }
 
 /* 320 - 480 px */
 @media screen and (max-width: 480px) {
