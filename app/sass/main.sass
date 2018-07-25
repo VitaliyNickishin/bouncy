@@ -109,6 +109,14 @@ input
 		text-align: center
 		text-transform: uppercase
 		color: $menu-text
+		cursor: pointer
+
+.hide-curtains /*открываем шторы через jQuery*/
+ background: rgba(0, 0, 0, 0)
+
+.backside /*скрываем надпись на шторах через jQuery*/
+ position: relative
+	z-index: -1
 
 .panel //общий прозрачныый зеленый фон
  background: rgba(24, 164, 134, 0.9)
@@ -127,15 +135,14 @@ input
 .go-top /*стрелка прокрутки вверх*/
 	display: none
 	position: fixed
-	color: $active-color
-	z-index: 900
 	right: 2%
 	bottom: 50%
+	color: $active-color
 	cursor: pointer
  opacity: 0.4
  &:hover
   opacity: 1
-  
+
 /*Hero section*/
 .header
 	background: url(../img/Layer-1.jpg) no-repeat 50% 100%
@@ -830,25 +837,24 @@ input
     border-radius: 5px
 .map
 	background: url(../img/MAP.jpg) no-repeat 0% 50%
- //height: 495px
- &-dark
-  text-align: center 	
-  &__text 
-   font-size: 16px
-   text-transform: uppercase
-   line-height: 429px
-   color: $menu-text
-  &__link
-  	margin-left: 20px
- 	 width: 18px
- 	 height: 18px
- 	 border-radius: 50%
- 	 background: $active-color
- 	 color: $menu-text
- 	 &:hover
- 	 	color: $active-color
- 	 	background: $menu-text
-
+ text-align: center
+ color: $menu-text	
+ &-title
+  cursor: pointer
+	 &__text 
+	  font-size: 16px
+	  text-transform: uppercase
+	  line-height: 429px
+	  color: $menu-text
+	  i
+	   margin-left: 20px
+	   width: 18px
+	 	 height: 18px
+	 	 border-radius: 50%
+	 	 background: $active-color
+	   &:hover
+	 	 	color: $active-color
+	 	 	background: $menu-text
 .footer
 	background: $details-bg
 	text-align: center

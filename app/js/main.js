@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+/*стрелка прокрутки вверх*/
 $(function() {
 	$(window).scroll(function() {
 		if($(this).scrollTop() > 700) {
@@ -13,7 +14,50 @@ $(function() {
 	});
 });
 
+/*открываем шторы и скрываем надпись на карте*/
+$(function () {
+	$('#map-title').click(function(){
+		$('#dark-curtains').addClass('hide-curtains');
+		$('#text').addClass('backside');
+	});
+});
+/*открываем шторы и скрываем надпись handmade*/
+$(function () {
+	$('#handmade').click(function(){
+		$('#curtains-handmade').addClass('hide-curtains');
+		$('#handmade').addClass('backside');
+	});
+});
+/*открываем шторы и скрываем надпись vintage*/
+$(function () {
+	$('#vintage').click(function(){
+		$('#curtains-vintage').addClass('hide-curtains');
+		$('#vintage').addClass('backside');
+	});
+});
+/*открываем шторы и скрываем надпись branding*/
+$(function () {
+	$('#branding').click(function(){
+		$('#curtains-branding').addClass('hide-curtains');
+		$('#branding').addClass('backside');
+	});
+});
 
+
+
+
+
+
+
+$(function () {
+
+$("#down").click(function () {
+       $('#dark').hide();
+    }); 
+ $("#down").click(function () {
+       $('#dark').show();
+    });             
+ });
 
 /*круговые диаграммы*/
 $(".dial_1").knob(
