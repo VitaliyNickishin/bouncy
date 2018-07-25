@@ -1,4 +1,21 @@
+$(document).ready(function(){
 
+$(function() {
+	$(window).scroll(function() {
+		if($(this).scrollTop() > 700) {
+			$('.go-top').fadeIn();
+		} else {
+			$('.go-top').fadeOut();
+		}
+		});
+			$('.go-top').click(function() {
+			$('body,html').animate({scrollTop:0},600);
+	});
+});
+
+
+
+/*круговые диаграммы*/
 $(".dial_1").knob(
 {
  'readOnly': true, //отмена прокрутки
@@ -40,7 +57,6 @@ $(".dial_3").knob(
  'inputColor': '#a3a6ac',
 });
 
-
- 
+}); 
 
 
