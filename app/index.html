@@ -634,7 +634,7 @@
 				</div><!-- /.row -->
 			</div><!-- /.container -->
 		</div><!-- /.info -->
-		<div class="map">
+		<div class="map" id="map">
 			<div class="dark-curtains" id="dark-curtains">
 			 <div class="container">
 				 <div class="row">
@@ -681,11 +681,24 @@
 
 
 
+<script>
+	/* Initialize and add the map*/
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 53.7308565, lng: -2.4668023};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 16, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+</script>
 
 
-
-
-
+ <!--Google maps-->
+ <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARW15D7p-LxP1wQqCWwrA8eFDuv4BpHPU&callback=initMap">
+ </script>
 
  <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
 	<script src="js/libs.min.js"></script>
