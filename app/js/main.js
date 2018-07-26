@@ -49,15 +49,7 @@ $(function () {
 
 
 
-$(function () {
 
-$("#down").click(function () {
-       $('#dark').hide();
-    }); 
- $("#down").click(function () {
-       $('#dark').show();
-    });             
- });
 
 /*круговые диаграммы*/
 $(".dial_1").knob(
